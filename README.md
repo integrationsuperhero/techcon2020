@@ -1,5 +1,4 @@
 # TechCon 2020 Labs
-IBM TechCon 2020 Labs
 
 ## Joining the labs
 Full Details will be provided during the week of August 3rd
