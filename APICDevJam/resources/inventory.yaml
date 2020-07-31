@@ -1,0 +1,419 @@
+paths:
+  /Items:
+    post:
+      tags:
+        - Item
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: Item.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Item'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Item'
+      deprecated: false
+    patch:
+      tags:
+        - Item
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: Item.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Item'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Item'
+      deprecated: false
+    put:
+      tags:
+        - Item
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: Item.replaceOrCreate__put_Items
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Item'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Item'
+      deprecated: false
+    get:
+      tags:
+        - Item
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Item.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Item'
+      deprecated: false
+  /Items/replaceOrCreate:
+    post:
+      tags:
+        - Item
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: Item.replaceOrCreate__post_Items_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Item'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Item'
+      deprecated: false
+  /Items/upsertWithWhere:
+    post:
+      tags:
+        - Item
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: Item.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Item'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Item'
+      deprecated: false
+  '/Items/{id}/exists':
+    get:
+      tags:
+        - Item
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Item.exists__get_Items_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/Items/{id}':
+    head:
+      tags:
+        - Item
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Item.exists__head_Items_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - Item
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Item.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Item'
+      deprecated: false
+    put:
+      tags:
+        - Item
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Item.replaceById__put_Items_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Item'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Item'
+      deprecated: false
+    delete:
+      tags:
+        - Item
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: Item.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - Item
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: Item.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Item'
+        - name: id
+          in: path
+          description: Item id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Item'
+      deprecated: false
+  '/Items/{id}/replace':
+    post:
+      tags:
+        - Item
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: 'Item.replaceById__post_Items_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Item'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Item'
+      deprecated: false
+  /Items/findOne:
+    get:
+      tags:
+        - Item
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: Item.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Item'
+      deprecated: false
+  /Items/update:
+    post:
+      tags:
+        - Item
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: Item.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Item'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /Items/count:
+    get:
+      tags:
+        - Item
+      summary: Count instances of the model matched by where from the data source.
+      operationId: Item.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+definitions:
+  Item:
+    properties:
+      id:
+        type: number
+        format: double
+      name:
+        maxLength: 255
+        type: string
+      description:
+        maxLength: 16777215
+        type: string
+      img:
+        maxLength: 255
+        type: string
+      price:
+        type: number
+        format: double
+    required:
+      - id
+      - name
+      - description
+      - img
+      - price
+    additionalProperties: false
+basePath: /api
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: inventory
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions: {}
+security: []
