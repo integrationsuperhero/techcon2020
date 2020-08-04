@@ -5,44 +5,45 @@
 **Table of Contents**
 :::
 
-***[APIC Dev Jam Series 2](#__RefHeading___Toc956_409490925)***
+***[APIC Dev Jam Series 2](#__RefHeading___Toc958_3207436410)***
 
-[Prerequisites: Labs 1-4 2](#__RefHeading___Toc958_409490925)
+[Prerequisites: Labs 1-4 2](#__RefHeading___Toc960_3207436410)
 
 ***[Create and Define the Financing API (REST to SOAP)
-2](#__RefHeading___Toc960_409490925)***
+2](#__RefHeading___Toc962_3207436410)***
 
 ***[Map the API to a Service WSDL
-12](#__RefHeading___Toc962_409490925)***
+12](#__RefHeading___Toc964_3207436410)***
 
-**[Attach a Service WSDL 12](#__RefHeading___Toc964_409490925)**
+**[Attach a Service WSDL 12](#__RefHeading___Toc966_3207436410)**
 
 **[Build the Financing API Assembly
-14](#__RefHeading___Toc966_409490925)**
+14](#__RefHeading___Toc968_3207436410)**
 
-***[Import Logistics API 22](#__RefHeading___Toc968_409490925)***
+***[Import Logistics API 22](#__RefHeading___Toc970_3207436410)***
 
-**[Import the OpenAPI Definition 22](#__RefHeading___Toc970_409490925)**
+**[Import the OpenAPI Definition
+22](#__RefHeading___Toc972_3207436410)**
 
 **[Configure payload to be stored in Analytics
-24](#__RefHeading___Toc972_409490925)**
+24](#__RefHeading___Toc974_3207436410)**
 
 ***[Create an Orchestration Assembly
-24](#__RefHeading___Toc974_409490925)***
+24](#__RefHeading___Toc976_3207436410)***
 
 **[Create the Logistics API Assembly
-25](#__RefHeading___Toc976_409490925)**
+25](#__RefHeading___Toc978_3207436410)**
 
 **[Configure the \`shipping.calc\` Case
-26](#__RefHeading___Toc978_409490925)**
+26](#__RefHeading___Toc980_3207436410)**
 
 ***[Use GatewayScript in an Assembly
-31](#__RefHeading___Toc980_409490925)***
+31](#__RefHeading___Toc982_3207436410)***
 
 **[Configure the \`get.stores\` Case
-32](#__RefHeading___Toc982_409490925)**
+32](#__RefHeading___Toc984_3207436410)**
 
-***[Summary 36](#__RefHeading___Toc984_409490925)***
+***[Summary 36](#__RefHeading___Toc986_3207436410)***
 :::
 
 In the previous labs, you have been working with an API that acts as a
@@ -71,12 +72,12 @@ In this tutorial, you will explore the following key capabilities:
 -   Use GatewayScript directly within an API assembly.
 
 [] APIC Dev Jam Series 
-==================================================================================================================================================================================================================================
+===================================================================================================================================================================================================================================
 
 The APIC Dev Jam Series is a hands-on workshop with lab exercises that
 walk you through designing, publishing, and securing APIs. This workshop
 is for API developers, architects, and line of business people who want
-to create a successful API strategy. There are 7 labs and each is 30
+to create a successful API strategy. There are 8 labs and each is 30
 minutes long. Make sure you choose enough time in your reservation to
 get through all the labs! 
 
@@ -111,11 +112,14 @@ Products](https://ibm.biz/TechConLabs/APICDevJam/Lab6)
 [Lab 7: The Consumer
 Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab7)
 
+[Lab 8: Create and test GraphQL Proxy
+API](https://ibm.biz/TechConLabs/APICDevJam/Lab8)
+
 []
 Prerequisites: Labs 1-4
 
  Create and Define the Financing API (REST to SOAP) 
-========================================================================================================
+=========================================================================================================
 
 ThinkIBM wants to give its customers the ability to calculate financing
 payments. There is already a legacy SOAP-based application which will do
@@ -291,13 +295,13 @@ save the API definition.
 ![](images/tutorial_html_a0106fbcef024d0.png)
 
  Map the API to a Service WSDL 
-===================================================================================
+====================================================================================
 
 Import the legacy Financing SOAP service WSDL and map it to the RESTful
 API definition.
 
  [Attach a Service WSDL] 
-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Click the **[Target Services]** option
     in the left column menu palette from the **[financing
@@ -323,7 +327,7 @@ will be displayed.
 click **[Submit]**.
 
  [Build the Financing API Assembly] 
----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 1\.
 Click [[Assemble]] to
@@ -481,7 +485,7 @@ menu to return to the list of APIs and Products in your system.
 ![](images/tutorial_html_a810481f55373ff0.png)
 
  Import Logistics API 
-==========================================================================
+===========================================================================
 
 In this lab section, we will be adding a new API called logistics which
 will provide helper services around calculating shipping rates and
@@ -490,7 +494,7 @@ from scratch again, you will see how you can import and modify an
 existing OpenAPI definition.
 
  [Import the OpenAPI Definition] 
-------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Click **[Add]** and
     select **[API.]**  
@@ -521,7 +525,7 @@ existing OpenAPI definition.
     to go to the API editor.
 
  [Configure payload to be stored in Analytics] 
---------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  From the API menu, select [[Activity
     Log]].
@@ -541,7 +545,7 @@ existing OpenAPI definition.
 ![](images/tutorial_html_1b4e90745e45c224.png)
 
  Create an Orchestration Assembly 
-======================================================================================
+=======================================================================================
 
 The logistics API provides resources for calculating shipping costs and
 locating the nearest store for pickup. In this section, you will
@@ -550,7 +554,7 @@ assembly will call out to two separate shipping vendors and provide a
 consolidated response back to the consumer.
 
  [Create the Logistics API Assembly] 
-----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Switch to
     the [[Assemble]] tab
@@ -588,7 +592,7 @@ consolidated response back to the consumer.
  
 
  [Configure the \`shipping.calc\` Case] 
--------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 This operation will end up invoking two separate back-end services to
 acquire shipping rates for the respective companies, then utilize a map
@@ -719,14 +723,14 @@ consolidated message for our consumers.
 ![](images/tutorial_html_8eaea845d79feb97.png)
 
  Use GatewayScript in an Assembly 
-======================================================================================
+=======================================================================================
 
 In this section, you will configure the assembly for the store locator
 resource. You will use GatewayScript to modify the response to your
 consumers, providing them a maps link to the nearest store location.
 
  [Configure the \`get.stores\` Case] 
-----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 This operation will call out to the Google Geocode API to obtain
 location information about the provided zip code, and will then utilize
@@ -822,7 +826,7 @@ operation policies:  
 ![](images/tutorial_html_a810481f55373ff0.png)
 
  Summary 
-=============================================================
+==============================================================
 
 Congratulations! You have successfully configured two new API's with
 advanced assemblies. Throughout the tutorial, you explored the key

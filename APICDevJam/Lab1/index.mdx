@@ -5,29 +5,29 @@
 **Table of Contents**
 :::
 
-***[APIC Dev Jam Series 1](#__RefHeading___Toc484_4206046564)***
+***[APIC Dev Jam Series 1](#__RefHeading___Toc482_583224278)***
 
 ***[Import API to the Developer Workspace
-2](#__RefHeading___Toc486_4206046564)***
+2](#__RefHeading___Toc484_583224278)***
 
-***[Configure API 9](#__RefHeading___Toc488_4206046564)***
+***[Configure API 9](#__RefHeading___Toc486_583224278)***
 
-**[Configure API Key security 9](#__RefHeading___Toc490_4206046564)**
+**[Configure API Key security 9](#__RefHeading___Toc488_583224278)**
 
 **[Define Target-URL for Sandbox environment
-12](#__RefHeading___Toc492_4206046564)**
+12](#__RefHeading___Toc490_583224278)**
 
 **[Configure Proxy Call in Designer
-13](#__RefHeading___Toc494_4206046564)**
+13](#__RefHeading___Toc492_583224278)**
 
-***[Test the API 14](#__RefHeading___Toc496_4206046564)***
+***[Test the API 14](#__RefHeading___Toc494_583224278)***
 
-***[Publish API 18](#__RefHeading___Toc498_4206046564)***
+***[Publish API 18](#__RefHeading___Toc496_583224278)***
 
 **[Create Inventory Product and Add API
-18](#__RefHeading___Toc500_4206046564)**
+18](#__RefHeading___Toc498_583224278)**
 
-***[Summary 21](#__RefHeading___Toc502_4206046564)***
+***[Summary 21](#__RefHeading___Toc500_583224278)***
 :::
 
 In this lab, you will get a chance to use the online APIC Developer
@@ -48,12 +48,12 @@ In this tutorial, you will explore the following key capabilities:
 -   Publish an API for developers.
 
  APIC Dev Jam Series 
-==================================================================================================================================================================================================================
+=================================================================================================================================================================================================================
 
 The APIC Dev Jam Series is a hands-on workshop with lab exercises that
 walk you through designing, publishing, and securing APIs. This workshop
 is for API developers, architects, and line of business people who want
-to create a successful API strategy. There are 7 labs and each is 30
+to create a successful API strategy. There are 8 labs and each is 30
 minutes long. Make sure you choose enough time in your reservation to
 get through all the labs! 
 
@@ -88,8 +88,11 @@ Products](https://ibm.biz/TechConLabs/APICDevJam/Lab6)
 [Lab 7: The Consumer
 Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab7)
 
+[Lab 8: Create and test GraphQL Proxy
+API](https://ibm.biz/TechConLabs/APICDevJam/Lab8)
+
  Import API to the Developer Workspace 
-============================================================================================
+===========================================================================================
 
 First, we will download the OpenApi file for the existing REST service
 for Inventory. Then, we will import it to the online workspace.
@@ -159,7 +162,7 @@ definition and Click **[Next.]**
 ![](images/tutorial_html_83ece115b799d430.png)
 
  Configure API 
-====================================================================
+===================================================================
 
 After importing the existing API, the first step is to configure basic
 security before exposing it to other developers. By creating a client
@@ -170,7 +173,7 @@ endpoints to match your multiple build stage environments. Finally, we
 will configure the proxy call to invoke the endpoint.
 
  [Configure API Key security] 
-----------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Click [[Security
     Definitions]].
@@ -241,7 +244,7 @@ will configure the proxy call to invoke the endpoint.
 ![](images/tutorial_html_5bd00a842ec2bfff.png)
 
  [Define Target-URL for Sandbox environment] 
--------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Click
     on [[Properties]] in
@@ -266,7 +269,7 @@ will configure the proxy call to invoke the endpoint.
     configuration.
 
  [Configure Proxy Call in Designer] 
-----------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  On the top Navigation,
     click [[Assemble]].
@@ -284,7 +287,7 @@ will configure the proxy call to invoke the endpoint.
 4.  Click [[Save]].
 
  Test the API 
-===================================================================
+==================================================================
 
 In the API designer, you have the ability to test the API immediately
 after creation in the Assemble view!
@@ -332,7 +335,7 @@ after creation in the Assemble view!
 ![](images/tutorial_html_d063fb9dba035b70.png)
 
  Publish API 
-==================================================================
+=================================================================
 
 In this lab, we will make the API available to developers. In order to
 do so, the API must be first put into a product and then published to
@@ -341,7 +344,7 @@ When the product is published, the Invoke policy defined in the previous
 lab is written to the gateway. 
 
  [Create Inventory Product and Add API] 
---------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
  
 
@@ -386,7 +389,7 @@ lab is written to the gateway. 
     see how to access this API as a developer.
 
  Summary 
-==============================================================
+=============================================================
 
 You completed the APIC Dev Jam Lab 1 - Create and Secure an
 API. Throughout the tutorial, you explored the key takeaways:
