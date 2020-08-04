@@ -1,8 +1,9 @@
 # TechCon 2020 Labs
 
 ## Joining the labs
-Proctored labs will be availble August 11-13 from 11 AM EST to 4 PM EST
-Full Details will be provided during the week of August 3rd
+Proctored labs will be available August 11-13 from 11 AM EST to 4 PM EST. Labs will be first come first serve.
+
+WebEx Trainer Links: Will be posted during the lab week. Please check back each day during the labs as the links will change. 
 
 
 ## Lab Abstracts
