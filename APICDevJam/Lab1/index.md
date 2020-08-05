@@ -1,35 +1,5 @@
 **APIC Dev Jam Lab 1 - Create and Secure an API**
 
-::: 
-::: 
-**Table of Contents**
-:::
-
-***[APIC Dev Jam Series 1](#__RefHeading___Toc482_583224278)***
-
-***[Import API to the Developer Workspace
-2](#__RefHeading___Toc484_583224278)***
-
-***[Configure API 9](#__RefHeading___Toc486_583224278)***
-
-**[Configure API Key security 9](#__RefHeading___Toc488_583224278)**
-
-**[Define Target-URL for Sandbox environment
-12](#__RefHeading___Toc490_583224278)**
-
-**[Configure Proxy Call in Designer
-13](#__RefHeading___Toc492_583224278)**
-
-***[Test the API 14](#__RefHeading___Toc494_583224278)***
-
-***[Publish API 18](#__RefHeading___Toc496_583224278)***
-
-**[Create Inventory Product and Add API
-18](#__RefHeading___Toc498_583224278)**
-
-***[Summary 21](#__RefHeading___Toc500_583224278)***
-:::
-
 In this lab, you will get a chance to use the online APIC Developer
 Toolkit and its intuitive interface to create a new API using the
 OpenAPI definition (YAML) of the existing product inventory RESTful
@@ -47,7 +17,7 @@ In this tutorial, you will explore the following key capabilities:
 
 -   Publish an API for developers.
 
- APIC Dev Jam Series 
+ APIC Dev Jam Series
 =================================================================================================================================================================================================================
 
 The APIC Dev Jam Series is a hands-on workshop with lab exercises that
@@ -56,8 +26,6 @@ is for API developers, architects, and line of business people who want
 to create a successful API strategy. There are 8 labs and each is 30
 minutes long. Make sure you choose enough time in your reservation to
 get through all the labs! 
-
- 
 
 [NOTE: ]**[This demo environment contains a
 full API Connect installation in Cloud Pak for Integration. The login
@@ -68,36 +36,34 @@ login using API Manager User Registry not Common Services
 registry.]**
 
 [Lab 1 : Create and Secure an API to Proxy an Existing REST Web
-service](https://ibm.biz/TechConLabs/APICDevJam/Lab1)
+service](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab1)
 
 [Lab 2 : The Developer Portal
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab2)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab2)
 
 [Lab 3 : Add OAuth Security to your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab3)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab3)
 
 [Lab 4 : Use Lifecycle Controls to Version Your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab4)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab4)
 
 [Lab 5: Advanced API
-Assembly](https://ibm.biz/TechConLabs/APICDevJam/Lab5)
+Assembly](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab5)
 
 [Lab 6: Working with API
-Products](https://ibm.biz/TechConLabs/APICDevJam/Lab6)
+Products](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab6)
 
 [Lab 7: The Consumer
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab7)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab7)
 
 [Lab 8: Create and test GraphQL Proxy
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab8)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab8)
 
- Import API to the Developer Workspace 
+ Import API to the Developer Workspace
 ===========================================================================================
 
 First, we will download the OpenApi file for the existing REST service
 for Inventory. Then, we will import it to the online workspace.
-
- 
 
 1.  Open a browser window to the API Manager Portal. If the screen
     displays [[\"Your connection is not
@@ -161,7 +127,7 @@ definition and Click **[Next.]**
 
 ![](images/tutorial_html_83ece115b799d430.png)
 
- Configure API 
+ Configure API
 ===================================================================
 
 After importing the existing API, the first step is to configure basic
@@ -172,7 +138,7 @@ actually running. API Connect supports pointing to multiple backend
 endpoints to match your multiple build stage environments. Finally, we
 will configure the proxy call to invoke the endpoint.
 
- [Configure API Key security] 
+ [Configure API Key security]
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Click [[Security
@@ -243,7 +209,7 @@ will configure the proxy call to invoke the endpoint.
 
 ![](images/tutorial_html_5bd00a842ec2bfff.png)
 
- [Define Target-URL for Sandbox environment] 
+ [Define Target-URL for Sandbox environment]
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Click
@@ -268,7 +234,7 @@ will configure the proxy call to invoke the endpoint.
 6.  Click **[Save]** to complete the
     configuration.
 
- [Configure Proxy Call in Designer] 
+ [Configure Proxy Call in Designer]
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  On the top Navigation,
@@ -286,7 +252,7 @@ will configure the proxy call to invoke the endpoint.
 ```
 4.  Click [[Save]].
 
- Test the API 
+ Test the API
 ==================================================================
 
 In the API designer, you have the ability to test the API immediately
@@ -334,7 +300,7 @@ after creation in the Assemble view!
 
 ![](images/tutorial_html_d063fb9dba035b70.png)
 
- Publish API 
+ Publish API
 =================================================================
 
 In this lab, we will make the API available to developers. In order to
@@ -343,10 +309,8 @@ the sandbox catalog. A product dictates rate limits and API throttling.
 When the product is published, the Invoke policy defined in the previous
 lab is written to the gateway. 
 
- [Create Inventory Product and Add API] 
+ [Create Inventory Product and Add API]
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-
- 
 
 1.  From the vertical navigation menu on the left,
     click **[Develop]** to return to the
@@ -388,7 +352,7 @@ lab is written to the gateway. 
     Experience](https://ibm.com/cloud/garage/dte/tutorial/apic-dev-jam-lab-2-developer-portal-experience) to
     see how to access this API as a developer.
 
- Summary 
+ Summary
 =============================================================
 
 You completed the APIC Dev Jam Lab 1 - Create and Secure an
@@ -406,5 +370,5 @@ API. Throughout the tutorial, you explored the key takeaways:
 
 Continue the APIC Dev Jam! Go to [APIC Dev Jam Lab 2 - The Developer
 Portal
-Experience](https://ibm.com/cloud/garage/dte/tutorial/apic-dev-jam-lab-2-developer-portal-experience) to
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab2) to
 learn how to socialize this API and make it available to developers.

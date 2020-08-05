@@ -1,36 +1,5 @@
 **APIC Dev Jam Lab 3 - Add OAuth Security to your API**
 
-::: 
-::: 
-**Table of Contents**
-:::
-
-***[APIC Dev Jam Series 1](#__RefHeading___Toc334_1200572646)***
-
-[Prerequisites: Labs 1-2 2](#__RefHeading___Toc336_1200572646)
-
-***[Configure a New OAuth 2.0 Provider API
-2](#__RefHeading___Toc338_1200572646)***
-
-**[Configure Authentication URL User Registry
-2](#__RefHeading___Toc340_1200572646)**
-
-**[Create OAuth Service 4](#__RefHeading___Toc342_1200572646)**
-
-**[Add the OAuth Service to the Sandbox Catalog
-9](#__RefHeading___Toc344_1200572646)**
-
-***[Create a New Version of the Inventory API
-9](#__RefHeading___Toc346_1200572646)***
-
-**[Save as a New Version 10](#__RefHeading___Toc348_1200572646)**
-
-***[Add OAuth security to the Inventory API
-10](#__RefHeading___Toc350_1200572646)***
-
-***[Summary 12](#__RefHeading___Toc352_1200572646)***
-:::
-
 In this lab, you will secure the Inventory API to protect the resources
 exposed by **ThinkIBM**. Consumers of your API will be required to
 obtain and provide a valid OAuth token before they can invoke the
@@ -45,7 +14,7 @@ In this tutorial, you will explore the following key capabilities:
 
 -   Secure the new version of your API.
 
- APIC Dev Jam Series 
+ APIC Dev Jam Series
 ==================================================================================================================================================================================================================
 
 The APIC Dev Jam Series is a hands-on workshop with lab exercises that
@@ -54,8 +23,6 @@ is for API developers, architects, and line of business people who want
 to create a successful API strategy. There are 8 labs and each is 30
 minutes long. Make sure you choose enough time in your reservation to
 get through all the labs! 
-
- 
 
 [NOTE: ]**[This demo environment contains a
 full API Connect installation in Cloud Pak for Integration. The login
@@ -66,33 +33,33 @@ login using API Manager User Registry not Common Services
 registry.]**
 
 [Lab 1 : Create and Secure an API to Proxy an Existing REST Web
-service](https://ibm.biz/TechConLabs/APICDevJam/Lab1)
+service](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab1)
 
 [Lab 2 : The Developer Portal
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab2)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab2)
 
 [Lab 3 : Add OAuth Security to your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab3)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab3)
 
 [Lab 4 : Use Lifecycle Controls to Version Your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab4)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab4)
 
 [Lab 5: Advanced API
-Assembly](https://ibm.biz/TechConLabs/APICDevJam/Lab5)
+Assembly](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab5)
 
 [Lab 6: Working with API
-Products](https://ibm.biz/TechConLabs/APICDevJam/Lab6)
+Products](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab6)
 
 [Lab 7: The Consumer
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab7)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab7)
 
 [Lab 8: Create and test GraphQL Proxy
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab8)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab8)
 
 
 Prerequisites: Labs 1-2
 
- Configure a New OAuth 2.0 Provider API 
+ Configure a New OAuth 2.0 Provider API
 =============================================================================================
 
 API Connect is a full-featured OAuth 2.0 provider. The OAuth exchange
@@ -101,7 +68,7 @@ this section, you will create a new OAuth provider API, configure which
 grant type to use, and configure how it will authenticate user
 credentials.
 
- [Configure Authentication URL User Registry] 
+ [Configure Authentication URL User Registry]
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 In order to configure user authentication, you must first define the
@@ -125,14 +92,13 @@ Registry]]
 
 URL: <https://thinkibm-services.mybluemix.net/auth>
 
-Display name:[[ App
-Registry]]
+Display name:[[ App Registry]]
 
 Click **Save** to save the resource
 
 ![](images/tutorial_html_ae75a185a7c7e950.png)
 
- [Create OAuth Service] 
+ [Create OAuth Service]
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 1.  In the API Manager from the main menu on the left,
@@ -150,8 +116,7 @@ Title: [[oauth]]
 
 Name: [[oauth]]
 
-Gateway Type: [[DataPower API
-Gateway]]
+Gateway Type: [[DataPower API Gateway]]
 
 ![](images/tutorial_html_22f9d0d5c30f657d.png)
 
@@ -172,19 +137,18 @@ Gateway]]
     for **[sample\_scope\_1]**, set the
     following fields:
 
-Name: [[inventory]]
+    Name: [[inventory]]
 
-Description: [[Access to Inventory
-API]]
+    Description: [[Access to Inventory API]]
 
-![](images/tutorial_html_b42ee8bacaf23a4c.png)
+    ![](images/tutorial_html_b42ee8bacaf23a4c.png)
 
 7.  Click [[Next]].
 
 8.  Keep all items default.
     Click [[Next.]]
 
-![](images/tutorial_html_985e9dbc3a3f82c0.png)
+    ![](images/tutorial_html_985e9dbc3a3f82c0.png)
 
 9.  Review your OAuth configuration and
     click [[Finish]].
@@ -193,9 +157,9 @@ API]]
 10. From the Sandbox Catalog registry setting, select API User
     Registries and Add App Registry
 
-![](images/tutorial_html_c24f06de482a8ab5.png)
+    ![](images/tutorial_html_c24f06de482a8ab5.png)
 
- [Add the OAuth Service to the Sandbox Catalog] 
+ [Add the OAuth Service to the Sandbox Catalog]
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  From the left menu, click [[Home Button
@@ -221,14 +185,14 @@ API]]
 
 ![](images/tutorial_html_6fa9961893476e8e.png)
 
- Create a New Version of the Inventory API 
+ Create a New Version of the Inventory API
 ================================================================================================
 
 API Connect supports multiple versions of APIs. Create a new version of
 the inventory API before making any changes that would break
 functionality for existing consumers. 
 
- [Save as a New Version] 
+ [Save as a New Version]
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 1.  In the API Manager from the main menu on the left,
@@ -245,7 +209,7 @@ functionality for existing consumers. 
     as [[2.0.0]] and
     click [[Submit]].
 
- Add OAuth security to the Inventory API 
+ Add OAuth security to the Inventory API
 ==============================================================================================
 
 Modify the security policy for your new API version to tell it to use
@@ -285,7 +249,7 @@ your OAuth 2.0 provider.
 
 6.  Save your changes.
 
- Summary 
+ Summary
 ==============================================================
 
 You completed the APIC Dev Jam Lab 3 - Add OAuth Security to your
@@ -300,5 +264,5 @@ API. Throughout the tutorial, you explored the key takeaways:
 
 Continue the APIC Dev Jam! Go To [APIC (v10) Dev Jam Lab 4 - Use
 Lifecycle controls to version your
-API](https://ibm.com/cloud/garage/dte/tutorial/apic-v2018-dev-jam-lab-4-use-lifecycle-controls-version-your-api) to
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab4) to
 manage the lifecycle of this API and test your new OAuth secured API.

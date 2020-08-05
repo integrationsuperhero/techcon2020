@@ -1,25 +1,5 @@
 **APIC Dev Jam - Lab 8 -- Creating GraphQL Proxy API**
 
-::: 
-::: 
-**Table of Contents**
-:::
-
-***[APIC Dev Jam Series 1](#__RefHeading___Toc383_1104972454)***
-
-[Prerequisites: None 2](#__RefHeading___Toc385_1104972454)
-
-***[Create a GraphQL Proxy API 2](#__RefHeading___Toc387_1104972454)***
-
-***[Create a Product and apply GraphQL RateLimits
-15](#__RefHeading___Toc389_1104972454)***
-
-***[Test GraphQL API from Developer Portal
-19](#__RefHeading___Toc391_1104972454)***
-
-***[Summary 25](#__RefHeading___Toc393_1104972454)***
-:::
-
 In this lab, you will explore the how to define GraphQL APIs that proxy
 to a backend GraphQL server. GraphQL is a query language for APIs that
 gives an application client greater control over what data it retrieves
@@ -38,7 +18,7 @@ In this tutorial, you will explore the following key capabilities:
 
 -   Review API Assembly Policies for the cost end point
 
-[] APIC Dev Jam Series 
+[] APIC Dev Jam Series
 =======================================================================================================================================================================================================================================================================================================
 
 The APIC Dev Jam Series is a hands-on workshop with lab exercises that
@@ -59,33 +39,33 @@ login using API Manager User Registry not Common Services
 registry.]**
 
 [Lab 1 : Create and Secure an API to Proxy an Existing REST Web
-service](https://ibm.biz/TechConLabs/APICDevJam/Lab1)
+service](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab1)
 
 [Lab 2 : The Developer Portal
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab2)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab2)
 
 [Lab 3 : Add OAuth Security to your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab3)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab3)
 
 [Lab 4 : Use Lifecycle Controls to Version Your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab4)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab4)
 
 [Lab 5: Advanced API
-Assembly](https://ibm.biz/TechConLabs/APICDevJam/Lab5)
+Assembly](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab5)
 
 [Lab 6: Working with API
-Products](https://ibm.biz/TechConLabs/APICDevJam/Lab6)
+Products](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab6)
 
 [Lab 7: The Consumer
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab7)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab7)
 
 [Lab 8: Create and test GraphQL Proxy
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab8)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab8)
 
 []
 Prerequisites: None
 
- Create a GraphQL Proxy API 
+ Create a GraphQL Proxy API
 =================================================================================
 
 1.  Select Develop API and click Add-\>API
@@ -194,11 +174,16 @@ yet.
     following in in GraphQL Editor window. You may use Prettify option
     to view formatting string.
 
-
-
+```
+{
+  accounts(limit: 2) {
+    name {
+      first
+      last
+    }
+  }
 }
-
-}
+```
 
 17. Click Run button to send the GraphQL request to the end point. An
     exception window will appear when you use test the API for the first
@@ -229,20 +214,28 @@ for other browsers. For firefox browser, follow the steps from here -
 
 20. You can request additional data fields (refer to the schema editor
     for details), GraphQL may reject if certain fields are locked or
-    prohibited. To test this, enter CredirCard information in the
+    prohibited. To test this, enter CreditCard information in the
     request field.
 
 The complete request looks as follows:
-
-
-
-shippingAddress 
-
+```
+{
+  accounts(limit: 2) {
+    name {
+      first
+      last
+    }
+    shippingAddress {
+      building
+      street
+    }
+  }
+  creditCard {
+    number
+    expirationDate
+  }
 }
-
-creditCard 
-
-}
+```
 
 You will notice that an error message is displayed in the results window
 instead of the account values as the server restricts the query field
@@ -258,7 +251,7 @@ in the screenshot).
 
 ![](images/tutorial_html_e37331678c3d02b2.png)
 
- Create a Product and apply GraphQL RateLimits 
+ Create a Product and apply GraphQL RateLimits
 ====================================================================================================
 
 1.  To create a product Select Develop icon from left menu bar and click
@@ -299,7 +292,7 @@ in the screenshot).
 
 ![](images/tutorial_html_890ebcd8219b104.png)
 
- Test GraphQL API from Developer Portal 
+ Test GraphQL API from Developer Portal
 =============================================================================================
 
 1.  Sign in to API Connect Developer Portal using the Developer Portal
@@ -343,7 +336,7 @@ in the screenshot).
 
 ![](images/tutorial_html_9575e27d8184b8fc.png)
 
-[] Summary 
+[] Summary
 =================================================================================================================
 
 Congratulations! You have successfully created a GraphQL Proxy API,

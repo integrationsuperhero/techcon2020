@@ -1,27 +1,9 @@
 **APIC Dev Jam - Lab 6 - Working with API Products**
 
-::: 
-::: 
-**Table of Contents**
-:::
-
-***[APIC Dev Jam Series 1](#__RefHeading___Toc246_2788306791)***
-
-[Prerequisites: Labs 1-5 2](#__RefHeading___Toc248_2788306791)
-
-***[Create an API Product 2](#__RefHeading___Toc250_2788306791)***
-
-***[Publish the API Product 6](#__RefHeading___Toc252_2788306791)***
-
-***[Summary 8](#__RefHeading___Toc254_2788306791)***
-:::
-
 Your work as an Application Developer and API Designer is now complete.
-It\'s time to switch roles and become an API Product Manager. The role
+It's time to switch roles and become an API Product Manager. The role
 of the API Product Manager is to take the developed assets and bundle
 them together using a go-to-market strategy.
-
- 
 
 In this case, you will publish the APIs from the accessories project
 together as a bundled product offering to API Consumers. Additionally,
@@ -38,7 +20,7 @@ In this tutorial, you will explore the following key capabilities:
 
 -   Publish a Product
 
- APIC Dev Jam Series 
+ APIC Dev Jam Series
 ====================================================================================================================================================================================================================================================
 
 The APIC Dev Jam Series is a hands-on workshop with lab exercises that
@@ -47,8 +29,6 @@ is for API developers, architects, and line of business people who want
 to create a successful API strategy. There are 8 labs and each is 30
 minutes long. Make sure you choose enough time in your reservation to
 get through all the labs! 
-
- 
 
 [NOTE: ]**[This demo environment contains a
 full API Connect installation in Cloud Pak for Integration. The login
@@ -59,33 +39,33 @@ login using API Manager User Registry not Common Services
 registry.]**
 
 [Lab 1 : Create and Secure an API to Proxy an Existing REST Web
-service](https://ibm.biz/TechConLabs/APICDevJam/Lab1)
+service](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab1)
 
 [Lab 2 : The Developer Portal
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab2)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab2)
 
 [Lab 3 : Add OAuth Security to your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab3)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab3)
 
 [Lab 4 : Use Lifecycle Controls to Version Your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab4)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab4)
 
 [Lab 5: Advanced API
-Assembly](https://ibm.biz/TechConLabs/APICDevJam/Lab5)
+Assembly](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab5)
 
 [Lab 6: Working with API
-Products](https://ibm.biz/TechConLabs/APICDevJam/Lab6)
+Products](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab6)
 
 [Lab 7: The Consumer
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab7)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab7)
 
 [Lab 8: Create and test GraphQL Proxy
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab8)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab8)
 
 
 Prerequisites: Labs 1-5
 
- Create an API Product 
+ Create an API Product
 ============================================================================
 
 Before being published, APIs are packaged into Products. In Lab 4, you
@@ -145,30 +125,24 @@ Keep rate limit of 100 with an interval of 1 hour
 
 11. In the Product Setup section, specify the following details:
 
-Summary: [[The Accessories product will provide really awesome APIs to
-your
-application.]]
+Summary: [[The Accessories product will provide really awesome APIs to your application.]]
 
-Contact Name: [[Thomas
-Watson]]
+```
+Contact Name: Thomas Watson
 
-Contact
-Email: [[watson\@ibm.com]]
+Contact Email: watson@ibm.com
 
-Contact
-URL: [[https://developer.ibm.com/apiconnect/]]
+Contact URL: https://developer.ibm.com/apiconnect/
 
+```
 12. Specify a License and Terms of Service:
 
-License Name: [[The MIT License
-(MIT)]]
+License Name: [[The MIT License (MIT)]]
 
 License
 URL: [[https://opensource.org/licenses/MIT]]
 
 Terms of Service: *paste the contents of the box below:*
-
- 
 
 [[Copyright (c) 2016 IBM Permission is hereby granted, free of charge,
 to any person obtaining a copy of this software and associated
@@ -213,7 +187,7 @@ Burst Limits: Delete the default burst-limit.
     click [[Develop]] in
     the main menu on the left.
 
- Publish the API Product 
+ Publish the API Product
 ==============================================================================
 
 Publish the Accessories Product and make it ready for consumers.
@@ -231,7 +205,7 @@ Publish the Accessories Product and make it ready for consumers.
 4.  The Sandbox catalog is already selected.
     Click **[Publish]**.
 
- Summary 
+ Summary
 ==============================================================
 
 Congratulations! You have successfully configured and published a new

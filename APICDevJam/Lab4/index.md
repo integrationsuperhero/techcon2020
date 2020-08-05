@@ -1,27 +1,5 @@
 **APIC Dev Jam Lab 4 - Use Lifecycle Controls to Version your API**
 
-::: 
-::: 
-**Table of Contents**
-:::
-
-***[APIC Dev Jam Series 2](#__RefHeading___Toc350_3884485054)***
-
-[Prerequisites: Labs 1-3 2](#__RefHeading___Toc352_3884485054)
-
-***[Create A New Product 2](#__RefHeading___Toc354_3884485054)***
-
-**[Stage the Product to your API Manager environment
-8](#__RefHeading___Toc356_3884485054)**
-
-***[Supersede the Old Product 9](#__RefHeading___Toc358_3884485054)***
-
-***[Test the OAuth Configuration
-13](#__RefHeading___Toc360_3884485054)***
-
-***[Summary 17](#__RefHeading___Toc362_3884485054)***
-:::
-
 In the previous lab, you created a new version of the inventory API
 which is secured with an OAuth 2.0 provider. At this stage, however, the
 changes are still in draft mode. In order for the changes to take
@@ -42,8 +20,6 @@ Management platform. The API lifecycle includes the following stages:
 
 5.  Retire and deprecate the API.
 
- 
-
 In this tutorial, you will explore the following key capabilities:
 
 -   Creating a new API Product
@@ -52,7 +28,7 @@ In this tutorial, you will explore the following key capabilities:
 
 -   Testing Your OAuth API in the Developer Portal
 
- APIC Dev Jam Series 
+ APIC Dev Jam Series
 ==================================================================================================================================================================================================================
 
 The APIC Dev Jam Series is a hands-on workshop with lab exercises that
@@ -62,7 +38,6 @@ to create a successful API strategy. There are 8 labs and each is 30
 minutes long. Make sure you choose enough time in your reservation to
 get through all the labs! 
 
- 
 
 [NOTE: ]**[This demo environment contains a
 full API Connect installation in Cloud Pak for Integration. The login
@@ -73,33 +48,33 @@ login using API Manager User Registry not Common Services
 registry.]**
 
 [Lab 1 : Create and Secure an API to Proxy an Existing REST Web
-service](https://ibm.biz/TechConLabs/APICDevJam/Lab1)
+service](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab1)
 
 [Lab 2 : The Developer Portal
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab2)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab2)
 
 [Lab 3 : Add OAuth Security to your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab3)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab3)
 
 [Lab 4 : Use Lifecycle Controls to Version Your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab4)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab4)
 
 [Lab 5: Advanced API
-Assembly](https://ibm.biz/TechConLabs/APICDevJam/Lab5)
+Assembly](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab5)
 
 [Lab 6: Working with API
-Products](https://ibm.biz/TechConLabs/APICDevJam/Lab6)
+Products](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab6)
 
 [Lab 7: The Consumer
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab7)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab7)
 
 [Lab 8: Create and test GraphQL Proxy
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab8)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab8)
 
 
 Prerequisites: Labs 1-3
 
- Create A New Product 
+ Create A New Product
 ===========================================================================
 
 In IBM API Connect, Plans and APIs are grouped together in Products,
@@ -167,7 +142,7 @@ API Connect:
 
  
 
- [Stage the Product to your API Manager environment] 
+ [Stage the Product to your API Manager environment]
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Before an API Product can be published, you must first stage that
@@ -200,7 +175,7 @@ associated with the Catalog.
 
  
 
- Supersede the Old Product 
+ Supersede the Old Product
 ================================================================================
 
 IBM API Connect provides capabilities for managing the lifecycle of your
@@ -215,10 +190,10 @@ your **[Sandbox]** catalog tile.
 
     ![](images/tutorial_html_dd28754d9b40b41b.gif)
 
-2\. The **[Products tab]** will list all of
+2. The **[Products tab]** will list all of
 the API Products that this Catalog is currently managing.
 
-3\. Make sure your newly created API Product **[Think
+3. Make sure your newly created API Product **[Think
 Inventory]** is in
 the **[Staged]** status while the
 old **[Inventory APIs]** product
@@ -226,13 +201,13 @@ is **[Published]** in the Catalog.
 
     ![](images/tutorial_html_b69739b268fcf1bf.png)
 
-4\. Click on the menu options for the **[Inventory
+4. Click on the menu options for the **[Inventory
 APIs]** product and select
 the **[Supersede]** option.
 
     ![](images/tutorial_html_779570cda3681c33.png)
 
-5\. Select the **[Think
+5. Select the **[Think
 Inventory]** product, as this is the one
 which will supersede Inventory APIs .
 
@@ -240,9 +215,9 @@ which will supersede Inventory APIs .
 
 ![](images/tutorial_html_4be14720ca4455b0.png)
 
-6\. Click **[Next]** in the bottom.
+6. Click **[Next]** in the bottom.
 
-7\. In order to maintain our consumers' entitlements, we need to migrate
+7. In order to maintain our consumers' entitlements, we need to migrate
 their plan subscriptions.
 
     Both of our Products have plans called**[ Default
@@ -255,13 +230,13 @@ click [[Supersede]].
 
    ![](images/tutorial_html_6303625db3f1ae01.png)
 
-8\. API Connect will take care of deprecating the old product and
+8. API Connect will take care of deprecating the old product and
 publishing the new one. As a result, the new **Think Inventory** product
 will be published, while the old one will be automatically deprecated.
 
     ![](images/tutorial_html_d7847d64c8d3c2d5.png)
 
- Test the OAuth Configuration 
+ Test the OAuth Configuration
 ===================================================================================
 
 In this section, you will test the new version of the API to ensure that
@@ -339,7 +314,7 @@ OAuth is working properly.
     the **[Send]** button again and see
     the **401 Unauthorized **error response.
 
- Summary 
+ Summary
 ==============================================================
 
 You completed the APIC Dev Jam Lab 4 - Use Lifecycle Controls to Version
@@ -352,6 +327,6 @@ your API. Throughout the tutorial, you explored the key takeaways:   
 -   Test Your OAuth API in the Developer Portal.
 
 Continue the APIC Dev Jam! Go to[ APIC Dev Jam - Lab 5 - Advanced API
-Assembly](https://ibm.com/cloud/garage/dte/tutorial/apic-v2018-dev-jam-lab-5-advanced-api-assembly) to
+Assembly](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab5) to
 learn about adding business logic to the API Gateway through the use of
 policies. 

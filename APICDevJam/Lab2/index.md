@@ -1,32 +1,5 @@
 **APIC Dev Jam - Lab 2 - The Developer Portal Experience**
 
-::: 
-::: 
-**Table of Contents**
-:::
-
-***[APIC Dev Jam Series 1](#__RefHeading___Toc277_3603618113)***
-
-[Prerequisites: Labs 1 2](#__RefHeading___Toc279_3603618113)
-
-***[Generate the developer portal
-2](#__RefHeading___Toc281_3603618113)***
-
-***[Register a test app 4](#__RefHeading___Toc283_3603618113)***
-
-**[Create A New Consumer Application
-5](#__RefHeading___Toc285_3603618113)**
-
-**[Save the Consumer Application Credentials
-6](#__RefHeading___Toc287_3603618113)**
-
-**[Subscribe to the API Product 7](#__RefHeading___Toc289_3603618113)**
-
-***[Test the API 10](#__RefHeading___Toc291_3603618113)***
-
-***[Summary 12](#__RefHeading___Toc293_3603618113)***
-:::
-
 In this lab, we will take the API created in Lab 1 and publish it to a
 Developer Portal, ready for consumption by app developers. We will begin
 by creating a new catalog and configuring the developer portal for our
@@ -43,7 +16,7 @@ In this tutorial, you will explore the following key capabilities:
 
 -   Test API in the Developer Portal
 
- APIC Dev Jam Series 
+ APIC Dev Jam Series
 ==================================================================================================================================================================================================================
 
 The APIC Dev Jam Series is a hands-on workshop with lab exercises that
@@ -64,33 +37,32 @@ login using API Manager User Registry not Common Services
 registry.]**
 
 [Lab 1 : Create and Secure an API to Proxy an Existing REST Web
-service](https://ibm.biz/TechConLabs/APICDevJam/Lab1)
+service](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab1)
 
 [Lab 2 : The Developer Portal
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab2)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab2)
 
 [Lab 3 : Add OAuth Security to your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab3)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab3)
 
 [Lab 4 : Use Lifecycle Controls to Version Your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab4)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab4)
 
 [Lab 5: Advanced API
-Assembly](https://ibm.biz/TechConLabs/APICDevJam/Lab5)
+Assembly](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab5)
 
 [Lab 6: Working with API
-Products](https://ibm.biz/TechConLabs/APICDevJam/Lab6)
+Products](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab6)
 
 [Lab 7: The Consumer
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab7)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab7)
 
 [Lab 8: Create and test GraphQL Proxy
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab8)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab8)
 
-[]
 Prerequisites: Labs 1
 
- Generate the developer portal 
+ Generate the developer portal
 ====================================================================================
 
  
@@ -128,7 +100,7 @@ Click **Sign in** to login to the portal
 
  
 
- Register a test app 
+ Register a test app
 ==========================================================================
 
 API Connect enforces entitlement rules to ensure that consumers are
@@ -136,7 +108,7 @@ allowed to access the APIs that are being requested. The instructions
 below will guide you through registering your consumer application and
 subscribing it to an API Product.
 
- [Create A New Consumer Application] 
+ [Create A New Consumer Application]
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Click [[Create an
@@ -151,7 +123,7 @@ subscribing it to an API Product.
 
 ![](images/tutorial_html_c4d9babec32568f9.png)
 
- [Save the Consumer Application Credentials] 
+ [Save the Consumer Application Credentials]
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 When your consumer application is registered in the IBM API Connect
@@ -171,20 +143,16 @@ to validate your subscription entitlements.
 2.  Now you\'ve entered the App Dashboard. Here you\'re able to see the
     analytics of your APIs.
 
- [Subscribe to the API Product] 
+ [Subscribe to the API Product]
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 At this point, your registered consumer application has no entitlements.
 In order to grant it access to an API resource, you must subscribe to a
 Product and Plan.
 
-1.  Click [[API
-    Products]] at
+1.  Click [[API Products]] at
     the top of the screen.
 
-```
-<!-- -->
-```
 2.  Click the [[inventory auto product
     1.0.0]] product.
 
@@ -200,7 +168,7 @@ Product and Plan.
 
 ![](images/tutorial_html_95cbfb50e3695ef5.png)
 
- Test the API 
+ Test the API
 ===================================================================
 
 The API Connect Developer Portal allows consumers to test the APIs
@@ -246,7 +214,7 @@ and return here to test again.]**
 
 ![](images/tutorial_html_1b2581520ef305f.png)
 
- Summary 
+ Summary
 ==============================================================
 
 You completed the APIC Dev Jam Lab 2 - The Developer Portal Experience.
@@ -262,5 +230,5 @@ Throughout the tutorial, you explored the key takeaways: 
 
 Continue the APIC Dev Jam! Go to [APIC Dev Jam - Lab 3 - Add OAuth
 Security to your
-API](https://ibm.com/cloud/garage/dte/tutorial/apic-dev-jam-lab-3-add-oauth-security-your-api) to
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab3) to
 learn about configuring an OAuth provider service. 

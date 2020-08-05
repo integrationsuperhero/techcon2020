@@ -1,55 +1,7 @@
 **APIC Dev Jam Lab 5 - Advanced API Assembly**
 
-::: 
-::: 
-**Table of Contents**
-:::
-
-***[APIC Dev Jam Series 2](#__RefHeading___Toc958_3207436410)***
-
-[Prerequisites: Labs 1-4 2](#__RefHeading___Toc960_3207436410)
-
-***[Create and Define the Financing API (REST to SOAP)
-2](#__RefHeading___Toc962_3207436410)***
-
-***[Map the API to a Service WSDL
-12](#__RefHeading___Toc964_3207436410)***
-
-**[Attach a Service WSDL 12](#__RefHeading___Toc966_3207436410)**
-
-**[Build the Financing API Assembly
-14](#__RefHeading___Toc968_3207436410)**
-
-***[Import Logistics API 22](#__RefHeading___Toc970_3207436410)***
-
-**[Import the OpenAPI Definition
-22](#__RefHeading___Toc972_3207436410)**
-
-**[Configure payload to be stored in Analytics
-24](#__RefHeading___Toc974_3207436410)**
-
-***[Create an Orchestration Assembly
-24](#__RefHeading___Toc976_3207436410)***
-
-**[Create the Logistics API Assembly
-25](#__RefHeading___Toc978_3207436410)**
-
-**[Configure the \`shipping.calc\` Case
-26](#__RefHeading___Toc980_3207436410)**
-
-***[Use GatewayScript in an Assembly
-31](#__RefHeading___Toc982_3207436410)***
-
-**[Configure the \`get.stores\` Case
-32](#__RefHeading___Toc984_3207436410)**
-
-***[Summary 36](#__RefHeading___Toc986_3207436410)***
-:::
-
 In the previous labs, you have been working with an API that acts as a
 pass-through to a microservice application.
-
- 
 
 In this lab, you will expand the product offerings for ThinkIBM. In
 addition to the Inventory API, ThinkIBM wishes to provide APIs that
@@ -71,7 +23,7 @@ In this tutorial, you will explore the following key capabilities:
 
 -   Use GatewayScript directly within an API assembly.
 
-[] APIC Dev Jam Series 
+APIC Dev Jam Series
 ===================================================================================================================================================================================================================================
 
 The APIC Dev Jam Series is a hands-on workshop with lab exercises that
@@ -80,8 +32,6 @@ is for API developers, architects, and line of business people who want
 to create a successful API strategy. There are 8 labs and each is 30
 minutes long. Make sure you choose enough time in your reservation to
 get through all the labs! 
-
- 
 
 [NOTE: ]**[This demo environment contains a
 full API Connect installation in Cloud Pak for Integration. The login
@@ -92,33 +42,32 @@ login using API Manager User Registry not Common Services
 registry.]**
 
 [Lab 1 : Create and Secure an API to Proxy an Existing REST Web
-service](https://ibm.biz/TechConLabs/APICDevJam/Lab1)
+service](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab1)
 
 [Lab 2 : The Developer Portal
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab2)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab2)
 
 [Lab 3 : Add OAuth Security to your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab3)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab3)
 
 [Lab 4 : Use Lifecycle Controls to Version Your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab4)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab4)
 
 [Lab 5: Advanced API
-Assembly](https://ibm.biz/TechConLabs/APICDevJam/Lab5)
+Assembly](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab5)
 
 [Lab 6: Working with API
-Products](https://ibm.biz/TechConLabs/APICDevJam/Lab6)
+Products](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab6)
 
 [Lab 7: The Consumer
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab7)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab7)
 
 [Lab 8: Create and test GraphQL Proxy
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab8)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab8)
 
-[]
 Prerequisites: Labs 1-4
 
- Create and Define the Financing API (REST to SOAP) 
+ Create and Define the Financing API (REST to SOAP)
 =========================================================================================================
 
 ThinkIBM wants to give its customers the ability to calculate financing
@@ -127,45 +76,39 @@ the calculation, but it should be exposed to consumers as a modern
 RESTful API. In this section, you will create a new OpenAPI definition
 for the financing API.
 
-1\. From the left navigation menu,
+1. From the left navigation menu,
 click **[Develop.]**
 
-2\. Click **[Add]** and
+2. Click **[Add]** and
 choose **[API]**.
 
     ![](images/tutorial_html_35bc8347ebf9f3c4.png)
 
-3\. Select **[New OpenAPI]** and
-click [[Next.]]
+3. Select **[New OpenAPI]** and click [[Next.]]
 
     ![](images/tutorial_html_8027761d9675e244.png)
 
-4. Fill in the form for **Create New OpenAPI** with the following
-values: 
+4. Fill in the form for **Create New OpenAPI** with the following values: 
 
     **[Title: financing]**
 
-  **Name: financing**
+    **Name: financing**
 
-  **Base Path: /financing**
+    **Base Path: /financing**
 
-  **Version: 1.0.0**
+    **Version: 1.0.0**
 
-[[  ]]Click **Next**.
+    Click **Next**.
 
     ![](images/tutorial_html_6dab5b579d7af76.png)
 
-5\. Leave all default values and
-click [[Next. ]]API
-Connect will generate a new OpenAPI definition for the financing API and
-provide a summary with the performed activities.
+5. Leave all default values and click [[Next. ]]API
+  Connect will generate a new OpenAPI definition for the financing API and
+  provide a summary with the performed activities.
 
-[[  ]]![](images/tutorial_html_fb454c7ee948008d.png)
+  ![](images/tutorial_html_fb454c7ee948008d.png)
 
-6. Click  **[Edit API ]**to customize the
-API.
-
-[[  ]]
+6. Click  **[Edit API ]**to customize the API.
 
 7. Create the model definition for the new API. These definitions are
 used in a few places. Their primary role is to serve as documentation in
@@ -181,12 +124,12 @@ click **[Add]** to create a new definition.
 leave the definition **[Type]** set
 to **[object]**.
 
-9\. Click **[Add]** in
+9. Click **[Add]** in
 the **[Properties]** section.
 
 ![](images/tutorial_html_332203efe7e366f5.png)
 
-10\. Edit the **property values** using the following values:
+10. Edit the **property values** using the following values:
 
    **Property Name: paymentAmount**
 
@@ -204,55 +147,47 @@ The property will be utilized in the Path you create next.
 Click **[Save]** to go back to the main API
 Editor.
 
-11\.
-Click [[Paths]] in
+11. Click [[Paths]] in
 the navigation menu on the left. Then
 click **[Add]** to create a new path.
 
 ![](images/tutorial_html_f3f04d5e1fde784d.png)
 
-12\. The Path screen is loaded. Edit the [[Path
-name]] to
-be **[/calculate]**.
-
-      **[Note:]** **[Recall that our Base
+12. The Path screen is loaded. Edit the [[Path name]] to be **[/calculate]**. **[Note:]** **[Recall that our Base
 Path for this API is \`/financing\`. This new path will be appended to
 the base, creating a final path of       
  /financing/calculate.]**
 
-13\.
-Click [[Add]] in
+13. Click [[Add]] in
 the Operations section to define the operation to support under the
 path.
 
 ![](images/tutorial_html_32f5ad5e80b58cd5.png)
 
-14\. From the **[Add Operation]** menu,
+14. From the **[Add Operation]** menu,
 select the **[Get]** operation and then
 click **[Add]**. 
 
 ![](images/tutorial_html_aae3e2ff9be52791.png)
 
-15\. Click **[Save]**. You will be
+15. Click **[Save]**. You will be
 redirected to the main API Editor to continue.
 
 ![](images/tutorial_html_66cc80ef2c7d855b.png)
 
-16\. Click the **[/calculate]** path we
-just created.
+16. Click the **[/calculate]** path we just created.
 
 ![](images/tutorial_html_864cc1225031590a.png)
 
-17\. Click the **[GET]** operation to add
+17. Click the **[GET]** operation to add
 the request parameters. This defines the input to the API request. Since
 this is a GET request, you will add the required request parameters to
 the query component of the URI.
 
 ![](images/tutorial_html_2cf0c1234fbd4aa3.png)
 
-18\. Scroll down to the Parameters section within the operation config.
-Click
- [[Add]] in
+18. Scroll down to the Parameters section within the operation config.
+Click [[Add]] in
 the [[Parameters]] section.
 You are actually going to need three total parameters for this
 operation, so go ahead and click the \`**Add**\` button **two more
@@ -260,7 +195,7 @@ times** to add the parameter templates.
 
 ![](images/tutorial_html_1e46988677afe0a.png)
 
-19\. Edit the **parameters** to set the values:
+19. Edit the **parameters** to set the values:
 
   **Required**   **Name**   **Located In**   **Type**   **Description**
   -------------- ---------- ---------------- ---------- --------------------------
@@ -272,7 +207,7 @@ Once you have entered the values, the screen will look like this:
 
 ![](images/tutorial_html_2fc0008e5f75928e.png)
 
-20\. Set the schema for the response. Click **Add** in
+20. Set the schema for the response. Click **Add** in
 the **[Response]** section.
 Enter [[200]] for [[STATUS
 CODE]].
@@ -288,19 +223,19 @@ calculated
 successfully]]
 ![](images/tutorial_html_f51180a01dc389af.png)
 
-21\.
+21.
 Click [[Save]] to
 save the API definition.
 
 ![](images/tutorial_html_a0106fbcef024d0.png)
 
- Map the API to a Service WSDL 
+ Map the API to a Service WSDL
 ====================================================================================
 
 Import the legacy Financing SOAP service WSDL and map it to the RESTful
 API definition.
 
- [Attach a Service WSDL] 
+ [Attach a Service WSDL]
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Click the **[Target Services]** option
@@ -323,19 +258,19 @@ will be displayed.
 
    ![](images/tutorial_html_6a8444e050b87ad3.png)
 
-5\. Select **[financingService.]** Then
+5. Select **[financingService.]** Then
 click **[Submit]**.
 
- [Build the Financing API Assembly] 
+ [Build the Financing API Assembly]
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
-1\.
+1.
 Click [[Assemble]] to
 access the assembly editor.
 
 ![](images/tutorial_html_7ecdd003a7db2e23.png)
 
-2\. In the processing pipeline, mouse over
+2. In the processing pipeline, mouse over
 the [[invoke]] policy
 and click
 the [[trashcan]] icon
@@ -343,37 +278,34 @@ to delete it.
 
 ![](images/tutorial_html_d05e099dd7e132b4.png)
 
-3\. Scroll down to the bottom of the policy menu and drag and drop
+3. Scroll down to the bottom of the policy menu and drag and drop
 the **[financing web service
 operations]** to processing pipeline.
 
 ![](images/tutorial_html_771de22ad92a31fb.png)
 
-4\. Now you are going to modify the input and output map policy for
+4. Now you are going to modify the input and output map policy for
 mapping your REST API into SOAP.
 
 ![](images/tutorial_html_4a933c8c317bbd97.png)
 
-5\. Since we are using the new API Gateway, we will need to instruct it
+5. Since we are using the new API Gateway, we will need to instruct it
 to use the newer version of the policies in the flow (map, invoke, map).
 Click Source to go to the OpenAPI definition of your API.
 
 ![](images/tutorial_html_35460e46cf085196.png)
 
-6\. Scroll down to map and insert [[version:
-2.0.0]] right
+6. Scroll down to map and insert [[version: 2.0.0]] right
 below it. 
 
 ![](images/tutorial_html_66473f670a224c38.png)
 
-7\. Scroll down to invoke and insert [[version
-2.0.0]] right
+7. Scroll down to invoke and insert [[version 2.0.0]] right
 below it. 
 
 ![](images/tutorial_html_d480dfb5896607c6.png)
 
-8\. Now go to the last map and insert **[version:
-2.0.0]** right below it.
+8\. Now go to the last map and insert **[version: 2.0.0]** right below it.
 Click [[Assemble]] to
 go back to the gateway flow designer.
 
@@ -484,7 +416,7 @@ menu to return to the list of APIs and Products in your system.
 
 ![](images/tutorial_html_a810481f55373ff0.png)
 
- Import Logistics API 
+ Import Logistics API
 ===========================================================================
 
 In this lab section, we will be adding a new API called logistics which
@@ -493,7 +425,7 @@ locating nearby stores. Rather than require you to build the entire API
 from scratch again, you will see how you can import and modify an
 existing OpenAPI definition.
 
- [Import the OpenAPI Definition] 
+ [Import the OpenAPI Definition]
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Click **[Add]** and
@@ -524,7 +456,7 @@ existing OpenAPI definition.
     the [[Summary]] page
     to go to the API editor.
 
- [Configure payload to be stored in Analytics] 
+ [Configure payload to be stored in Analytics]
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  From the API menu, select [[Activity
@@ -544,7 +476,7 @@ existing OpenAPI definition.
 
 ![](images/tutorial_html_1b4e90745e45c224.png)
 
- Create an Orchestration Assembly 
+ Create an Orchestration Assembly
 =======================================================================================
 
 The logistics API provides resources for calculating shipping costs and
@@ -553,7 +485,7 @@ configure the assembly for the shipping calculation resource. Your API
 assembly will call out to two separate shipping vendors and provide a
 consolidated response back to the consumer.
 
- [Create the Logistics API Assembly] 
+ [Create the Logistics API Assembly]
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Switch to
@@ -591,7 +523,7 @@ consolidated response back to the consumer.
 
  
 
- [Configure the \`shipping.calc\` Case] 
+ [Configure the \`shipping.calc\` Case]
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 This operation will end up invoking two separate back-end services to
@@ -620,7 +552,7 @@ consolidated message for our consumers.
          ![](images/tutorial_html_3a71962c80162408.png)
 
     -   **[Note: The  parameter provided here is a reference to the
-        zip parameter defined as input to the operation. The 
+        zip parameter defined as input to the operation. The
         portion of the URL will get replaced by the actual zip code
         provided by the API consumers. ]**
 
@@ -722,14 +654,14 @@ consolidated message for our consumers.
 
 ![](images/tutorial_html_8eaea845d79feb97.png)
 
- Use GatewayScript in an Assembly 
+ Use GatewayScript in an Assembly
 =======================================================================================
 
 In this section, you will configure the assembly for the store locator
 resource. You will use GatewayScript to modify the response to your
 consumers, providing them a maps link to the nearest store location.
 
- [Configure the \`get.stores\` Case] 
+ [Configure the \`get.stores\` Case]
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 This operation will call out to the Google Geocode API to obtain
@@ -825,7 +757,7 @@ operation policies:  
 
 ![](images/tutorial_html_a810481f55373ff0.png)
 
- Summary 
+ Summary
 ==============================================================
 
 Congratulations! You have successfully configured two new API's with
@@ -845,8 +777,5 @@ takeaways:
 -   Use GatewayScript directly within an API assembly.
 
 Continue with the APIC Dev Jam! Go
-to[[ ](https://ibm.com/cloud/garage/dte/tutorial/apic-v2018-dev-jam-lab-5-advanced-api-assembly)[APIC
-Dev Jam - Lab 6 - Working with API
-Products](https://ibm.com/cloud/garage/dte/tutorial/apic-v2018-dev-jam-lab-6-working-with-api-products)] to
-learn about bundling the API's into a Product and publishing it to the
-consumer portal.
+to [APIC Dev Jam - Lab 6 - Working with API Products](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab6))] to
+learn about bundling the API's into a Product and publishing it to the consumer portal.

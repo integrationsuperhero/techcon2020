@@ -1,23 +1,5 @@
 **APIC Dev Jam - Lab 7 - The Consumer Experience**
 
-::: 
-::: 
-**Table of Contents**
-:::
-
-***[APIC Dev Jam Series 1](#__RefHeading___Toc233_2887213203)***
-
-[Prerequisites: Labs 1-6 2](#__RefHeading___Toc235_2887213203)
-
-***[Subscribe o the Accessories Product
-2](#__RefHeading___Toc237_2887213203)***
-
-***[Test APIs from the Developer Portal
-7](#__RefHeading___Toc239_2887213203)***
-
-***[Summary 10](#__RefHeading___Toc241_2887213203)***
-:::
-
 In this lab, you will explore the consumer experience for APIs that have
 been exposed to your Sandbox catalog. Using the Developer Portal, you
 will log in and subscribe to the latest Accessories Product and test the
@@ -31,7 +13,7 @@ In this tutorial, you will explore the following key capabilities:
 
 -   Consume an API from a sample test application.
 
- APIC Dev Jam Series 
+ APIC Dev Jam Series
 ======================================================================================================================================================================================================================================================================================
 
 The APIC Dev Jam Series is a hands-on workshop with lab exercises that
@@ -40,8 +22,6 @@ is for API developers, architects, and line of business people who want
 to create a successful API strategy. There are 8 labs and each is 30
 minutes long. Make sure you choose enough time in your reservation to
 get through all the labs! 
-
- 
 
 [NOTE: ]**[This demo environment contains a
 full API Connect installation in Cloud Pak for Integration. The login
@@ -52,33 +32,33 @@ login using API Manager User Registry not Common Services
 registry.]**
 
 [Lab 1 : Create and Secure an API to Proxy an Existing REST Web
-service](https://ibm.biz/TechConLabs/APICDevJam/Lab1)
+service](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab1)
 
 [Lab 2 : The Developer Portal
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab2)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab2)
 
 [Lab 3 : Add OAuth Security to your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab3)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab3)
 
 [Lab 4 : Use Lifecycle Controls to Version Your
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab4)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab4)
 
 [Lab 5: Advanced API
-Assembly](https://ibm.biz/TechConLabs/APICDevJam/Lab5)
+Assembly](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab5)
 
 [Lab 6: Working with API
-Products](https://ibm.biz/TechConLabs/APICDevJam/Lab6)
+Products](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab6)
 
 [Lab 7: The Consumer
-Experience](https://ibm.biz/TechConLabs/APICDevJam/Lab7)
+Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab7)
 
 [Lab 8: Create and test GraphQL Proxy
-API](https://ibm.biz/TechConLabs/APICDevJam/Lab8)
+API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab8)
 
 
 Prerequisites: Labs 1-6
 
- Subscribe o the Accessories Product 
+ Subscribe o the Accessories Product
 ==========================================================================================
 
 In this section, you will subscribe to a plan for the
@@ -120,9 +100,6 @@ Accessories Product using the IBM Consumer application.
     Click [[Subscribe]] under
     the [[Silver]] plan.  ![](images/tutorial_html_fd5ece1fe8b66fa5.png)
 
-```
-<!-- -->
-```
 10. **Note:** The Gold plan requires approval by the API provider for
     any subscription requests and allows unlimited requests for a given
     time period. The Silver plan is limited to 100 requests per hour and
@@ -147,7 +124,7 @@ Accessories Product using the IBM Consumer application.
     finalize the
     wizard.  ![](images/tutorial_html_359b7068e5f3a808.png)
 
- Test APIs from the Developer Portal 
+ Test APIs from the Developer Portal
 ============================================================================================================================
 
 In this section, you will use the Developer Portal to test one of the
@@ -183,7 +160,7 @@ expected response based on inputs they provide the API.
     /calculate ]]APIs
     as well.
 
- Summary 
+ Summary
 ================================================================================================
 
 Congratulations! You have created multiple plans, tested APIs in the
