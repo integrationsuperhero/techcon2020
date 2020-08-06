@@ -275,8 +275,7 @@ after creation in the Assemble view!
     should look like the image below.
     ![](images/tutorial_html_a35d4b82b4aa8b10.png)
 
-4.  Under **[Test]** choose **[get
-    /Items.]**
+4.  Choose **[Test]** tab and append **[/Items]** to the URL as shown below.
 
 ![](images/tutorial_html_5e2c8cff09f77c58.png)
 
