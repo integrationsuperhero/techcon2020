@@ -1,1 +1,0 @@
-#TechCon Labs
