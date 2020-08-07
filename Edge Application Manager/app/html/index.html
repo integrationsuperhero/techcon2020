@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TensorFlow.js Image Analysis Example</title>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="model.js"></script>
+  </head>
+  <body>
+    <h1>TensorFlow.js Image Analysis Example</h1>
+    <button type="button" id="btnImage1" onclick="setImage('dog.jpg')">Process Image 1</button>
+    <button type="button" id="btnImage2" onclick="setImage('cat.jpg')">Process Image 2</button>
+    <div>
+        <img id="img" />
+    </div>
+    <div style="padding-top: 1em;"><h3><span  id="messageBox"></span></h3></div>
+
+  </body>
+  <script>
+
+
+function setImage(img) {
+    document.getElementById('img').src=img;
+    processImage();
+}
+
+function setMessage(html){
+    const messageBox = document.getElementById('messageBox');
+    messageBox.innerHTML = html;
+    console.log('Message: ' + html );
+}
+
+var processor;
+
+async function processImage() {
+    setMessage('Loading model ...');
+  
+    processor = await cocoSsd.load();
+  
+    // Make a prediction through the model on our image.
+    const elmImg = document.getElementById('img');
+    const result = await processor.detect(elmImg);
+    
+    var msg = "";
+    for(var i=0; i<result.length;i++){
+        var item = result[i];
+        msg += item.class + " " + Math.floor(item.score*100) + "%<br/>";
+    }
+    setMessage(msg);
+}
+
+  </script>
+</html>
