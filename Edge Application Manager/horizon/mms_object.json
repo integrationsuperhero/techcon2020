@@ -1,0 +1,22 @@
+{
+  "objectID": "$HOSTNAME-model.js",
+  "objectType": "model",
+  "destinationOrgID": "$HZN_ORG_ID",
+  "destinationPolicy": {
+    "properties": [],
+    "constraints": [
+     ],
+    "services": [
+        {
+            "orgID" : "$HZN_ORG_ID",
+            "arch": "$ARCH",
+            "serviceName" : "$SERVICE_NAME",
+            "version": "$SERVICE_VERSION"
+       }
+    ]
+  }, 
+  "expiration": "",
+  "version": "1.0.0",
+  "description": "image demo with tensorflow models",
+  "activationTime": ""
+}

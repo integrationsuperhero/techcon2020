@@ -1,0 +1,26 @@
+{
+    "org": "$HZN_ORG_ID",
+    "label": "$SERVICE_NAME for $ARCH",
+    "description": "A super-simple image demo with Horizon MMS updates",
+    "public": false,
+    "documentation": "https://github.com/jiportilla/img-MMS/blob/master/README.md",
+    "url": "$SERVICE_NAME",
+    "version": "$SERVICE_VERSION",
+    "arch": "$ARCH",
+    "sharable": "multiple",
+    "requiredServices": [],
+    "userInput": [],
+    "deployment": {
+        "services": {
+            "$SERVICE_NAME": {
+                "image": "$DOCKER_IMAGE",
+		        "ports": [
+                    {
+                        "HostPort": "9080:80/tcp",
+                        "HostIP": "0.0.0.0"
+                    }
+                ]
+            }
+        }
+    }
+}
