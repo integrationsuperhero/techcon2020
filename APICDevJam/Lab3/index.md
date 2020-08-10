@@ -79,6 +79,8 @@ URL.
 1.  In the API Manager from the main menu on the left,
     click [[Resources]].
 
+    ![](images/tutorial_html_newcreateregistry.png)
+
 2.  Select the [[Authentication URL User
     Registry]] tile.
 
@@ -154,7 +156,10 @@ URL.
     Then click on the back arrow.
 
 10. From the Sandbox Catalog registry setting, select API User
-    Registries and Add App Registry
+    Registries and Add App Registry. To open Sandbox Settings follow
+    Home-\>Manage Catalogs-\>Sandbox-\>Settings(Gearbox)->API User Registries.
+
+    Use **Edit** option and enable available API registry.
 
     ![](images/tutorial_html_c24f06de482a8ab5.png)
 
@@ -230,8 +235,7 @@ your OAuth 2.0 provider.
 
     -   Type: [[OAuth2]]
 
-    -   Flow: [[Resource owner
-        password]]
+    -   Flow: [[Resource owner]]
 
     -   Token URL: keep
         default [[https://\$(catalog.url)/oauth/oauth2/token]]

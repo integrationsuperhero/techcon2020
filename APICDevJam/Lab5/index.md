@@ -298,13 +298,13 @@ API definition.
     ![](images/tutorial_html_66473f670a224c38.png)
 
 7. Scroll down to invoke and insert [[version 2.0.0]] right
-    below it. 
+    below it. Skip if the version 2.0.0 is already populated.
 
     ![](images/tutorial_html_d480dfb5896607c6.png)
 
 8. Now go to the last map and insert **[version: 2.0.0]** right below it.
     Click [[Assemble]] to
-    go back to the gateway flow designer.
+    go back to the gateway flow designer. Skip if the version 2.0.0 is already populated.
 
     ![](images/tutorial_html_80b968197ef6f435.png)
 
@@ -461,7 +461,7 @@ existing OpenAPI definition.
 
 2.  Set the [[Content on
     error]] drop-down
-    to [[payload]].
+    to [[activity]].
     Click [[Save]].
 
     ![](images/tutorial_html_1b4e90745e45c224.png)
@@ -486,7 +486,7 @@ consolidated response back to the consumer.
     icon]].
 
 2.  Click and drag
-    the [[switch]] policy
+    the [[Operation switch]] policy
     to flow pipeline in the right.
 
 3.  The switch editor will open with a single case with case 0 created

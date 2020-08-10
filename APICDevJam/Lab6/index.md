@@ -174,7 +174,7 @@ SOFTWARE.]]
 
     Approval: check
 
-    Rate Limits: Delete the default rate-limit to make this plan unlimited.
+    Rate Limits: Click **unlimited** on rate to make this plan unlimited.
 
     Burst Limits: Delete the default burst-limit.
 
@@ -216,3 +216,7 @@ key takeaways:
 -   Create a plan.
 
 -   Publish a product.
+
+Continue with the APIC Dev Jam! Go
+to [APIC Dev Jam - Lab 7 - The Consumer Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab7))] to
+explore the consumer experience for APIs that have been exposed to your Sandbox catalog.
