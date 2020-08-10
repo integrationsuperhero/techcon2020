@@ -196,7 +196,7 @@ per-API.
 6.  Paste your **[Client Secret]** into the
     provided field.
 
-7.  Click the [[Send]] button
+7.  Click the [[**Send**]] button
     to invoke the API.
 
 8.  Scroll down to see the call results.

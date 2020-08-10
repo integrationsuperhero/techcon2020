@@ -1,7 +1,7 @@
 **APIC Dev Jam Lab 3 - Add OAuth Security to your API**
 
 In this lab, you will secure the Inventory API to protect the resources
-exposed by **ThinkIBM**. Consumers of your API will be required to
+exposed by **API Connect**. Consumers of your API will be required to
 obtain and provide a valid OAuth token before they can invoke the
 Inventory API.
 

@@ -81,13 +81,11 @@ Plans to which consumers can subscribe.
 
 4.  Provide the following configuration for the new product:
 
-Title: [[
-Accessories]]
+    Title: [[Accessories]]
 
-Name: [[
-accessories]]
+    Name: [[accessories]]
 
-![](images/tutorial_html_8a48fefa2dfaf506.png)
+    ![](images/tutorial_html_8a48fefa2dfaf506.png)
 
 5.  Click **[Next]**.
 
@@ -96,16 +94,15 @@ accessories]]
     Then
     click [[Next]].
 
-![](images/tutorial_html_b454495554d463d4.png)
+    ![](images/tutorial_html_b454495554d463d4.png)
 
 7.  Provide the following Plan details:
 
-Title: **[Silver]**
+    Title: **[Silver]**
 
-Description: **[Limited access to the Accessories
-APIs]**
+    Description: **[Limited access to the Accessories APIs]**
 
-Keep rate limit of 100 with an interval of 1 hour
+    Keep rate limit of 100 with an interval of 1 hour
 
 8.  Click [[Next]].
 
@@ -115,17 +112,17 @@ Keep rate limit of 100 with an interval of 1 hour
     Then
     click [[Next]].
 
-![](images/tutorial_html_21d7e02a18ac77eb.png)
+    ![](images/tutorial_html_21d7e02a18ac77eb.png)
 
 10. The product has been created! Click [[Edit
     Product]] to
     make changes.
 
-![](images/tutorial_html_76be1bfa7168087f.png)
+    ![](images/tutorial_html_76be1bfa7168087f.png)
 
 11. In the Product Setup section, specify the following details:
 
-Summary: [[The Accessories product will provide really awesome APIs to your application.]]
+    Summary: [[The Accessories product will provide really awesome APIs to your application.]]
 
 ```
 Contact Name: Thomas Watson
@@ -137,13 +134,13 @@ Contact URL: https://developer.ibm.com/apiconnect/
 ```
 12. Specify a License and Terms of Service:
 
-License Name: [[The MIT License (MIT)]]
+    License Name: [[The MIT License (MIT)]]
 
-License
-URL: [[https://opensource.org/licenses/MIT]]
+    License
+    URL: [[https://opensource.org/licenses/MIT]]
 
-Terms of Service: *paste the contents of the box below:*
-
+    Terms of Service: *paste the contents of the box below:*
+```
 [[Copyright (c) 2016 IBM Permission is hereby granted, free of charge,
 to any person obtaining a copy of this software and associated
 documentation files (the \"Software\"), to deal in the Software without
@@ -161,7 +158,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
 OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE
 SOFTWARE.]]
-
+```
 13. Scroll to the bottom and
     click [[Save]].
 
@@ -170,18 +167,18 @@ SOFTWARE.]]
 
 15. Fill in the following details:
 
-Title: [[Gold]]
+    Title: [[Gold]]
 
-Description: **[Unlimited access to the Accessories APIs for approved
-users]**
+    Description: **[Unlimited access to the Accessories APIs for approved
+    users]**
 
-Approval: check
+    Approval: check
 
-Rate Limits: Delete the default rate-limit to make this plan unlimited.
+    Rate Limits: Delete the default rate-limit to make this plan unlimited.
 
-Burst Limits: Delete the default burst-limit.
+    Burst Limits: Delete the default burst-limit.
 
-![](images/tutorial_html_bee42885833ec65a.png)
+    ![](images/tutorial_html_bee42885833ec65a.png)
 
 16. **Save** your changes. Then
     click [[Develop]] in

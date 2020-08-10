@@ -256,7 +256,7 @@ Prerequisites: None
 
 2.  Name the product as Accounts Product and click Next
 
-  ![](images/tutorial_html_d0c3992a4bd7bc24.png)
+    ![](images/tutorial_html_d0c3992a4bd7bc24.png)
 
 3.  Add Accounts API to the product by selecting accounts. Click Next to
     continue to create the accounts-product.
@@ -277,15 +277,15 @@ Prerequisites: None
 
 6.  Publish the Product to Sandbox Catalog by selecting Publish
 
-  ![](images/tutorial_html_a1f1cf7707e31913.png)
+    ![](images/tutorial_html_a1f1cf7707e31913.png)
 
 7.  Accept the default for Visibility and Subscribability
 
-  ![](images/tutorial_html_1adf1922464ea393.png)
+    ![](images/tutorial_html_1adf1922464ea393.png)
 
 8.  Click Publish to complete publishing the product.
 
-  ![](images/tutorial_html_890ebcd8219b104.png)
+    ![](images/tutorial_html_890ebcd8219b104.png)
 
  Test GraphQL API from Developer Portal
 =============================================================================================

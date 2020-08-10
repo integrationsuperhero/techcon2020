@@ -101,8 +101,7 @@ API Connect:
 
     ![](images/tutorial_html_1b6ee2ef86d15297.png)
 
-4.  Title this product [[Think
-    Inventory]] and
+4.  Title this product [[Inventory Products]] and
     click [[Next.]]
 
     ![](images/tutorial_html_f9602420f730e70a.png)
@@ -190,8 +189,7 @@ running version of an API Product with a new one.
 2. The **[Products tab]** will list all of
   the API Products that this Catalog is currently managing.
 
-3. Make sure your newly created API Product **[Think
-  Inventory]** is in
+3. Make sure your newly created API Product **[Inventory Products]** is in
   the **[Staged]** status while the
   old **[Inventory APIs]** product
   is **[Published]** in the Catalog.
@@ -204,8 +202,7 @@ running version of an API Product with a new one.
 
   ![](images/tutorial_html_779570cda3681c33.png)
 
-5. Select the **[Think
-  Inventory]** product, as this is the one
+5. Select the **[Inventory Products]** product, as this is the one
   which will supersede Inventory APIs .
 
   ![](images/tutorial_html_4be14720ca4455b0.png)
@@ -217,7 +214,7 @@ running version of an API Product with a new one.
 
   Both of our Products have plans called**[ Default
   Plan.]** You will now choose to move
-  subscribers from the Inventory Product's default plan to the Think
+  subscribers from the Inventory Product's default plan to the
   Inventory Product's default plan.
 
   In the drop-down menu, select Default Plan and then
@@ -226,7 +223,7 @@ running version of an API Product with a new one.
    ![](images/tutorial_html_6303625db3f1ae01.png)
 
 8. API Connect will take care of deprecating the old product and
-  publishing the new one. As a result, the new **Think Inventory** product
+  publishing the new one. As a result, the new **Inventory Products** product
   will be published, while the old one will be automatically deprecated.
 
    ![](images/tutorial_html_d7847d64c8d3c2d5.png)
@@ -244,11 +241,11 @@ OAuth is working properly.
 
 3.  Notice that the old **[Inventory
     APIs]** product is no longer available.
-    It has been replaced by your new **[Think
-    Inventory]** product.
+    It has been replaced by your new **[Inventory Products]** product.
 
-4.  Click on the **[ Inventory
-    Product]**. **Note:** There is no need
+4.  Click on the **[ Inventory Products]**. 
+
+    **Note:** There is no need
     to re-subscribe your application to the plan. By
     using **[Replace]** as the state change
     control, your subscription was automatically migrated. As a result,
