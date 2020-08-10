@@ -79,12 +79,12 @@ Accessories Product using the IBM Consumer application.
 5.  Enter Login page using Sign in option at the top right corner of the
     page.
 
-![](images/tutorial_html_db604e248301f829.png)
+    ![](images/tutorial_html_db604e248301f829.png)
 
 6.  Login using the username \<portaluser\> and password
     \<portaluser-password\>
 
-![](images/tutorial_html_492593c5f2350159.png)
+    ![](images/tutorial_html_492593c5f2350159.png)
 
 7.  Click the [[API
     Products]] link
@@ -93,7 +93,7 @@ Accessories Product using the IBM Consumer application.
 8.  Select the [[ Accessories
     1.0.0]] product. 
 
-![](images/tutorial_html_6efccbf2582a30c0.png)  
+    ![](images/tutorial_html_6efccbf2582a30c0.png)  
 
 9.  You will be directed to the Product page which lists the available
     plans for subscription.
@@ -111,18 +111,21 @@ Accessories Product using the IBM Consumer application.
     application). Click [[Select
     App]] which
     is located below the application
-    tile.  ![](images/tutorial_html_fe0fc338b5ae9fd3.png)
+    tile.  
+    ![](images/tutorial_html_fe0fc338b5ae9fd3.png)
 
 12. A window with the subscription details is displayed to confirm the
     information provided.
     Click [[Next]] once
     you have reviewed the
-    information.  ![](images/tutorial_html_ea31c68f8a08a741.png)
+    information.  
+    ![](images/tutorial_html_ea31c68f8a08a741.png)
 
 13. The last step is displayed with the summary of the subscription.
     Click [[Done]] to
     finalize the
-    wizard.  ![](images/tutorial_html_359b7068e5f3a808.png)
+    wizard.  
+    ![](images/tutorial_html_359b7068e5f3a808.png)
 
  Test APIs from the Developer Portal
 ============================================================================================================================
@@ -135,24 +138,28 @@ expected response based on inputs they provide the API.
 1.  Click the [[logistics
     2.0.0]] API
     link on the Accessories product
-    page.  ![](images/tutorial_html_8ec6b1024d5a2f9a.png)
+    page.  
+    ![](images/tutorial_html_8ec6b1024d5a2f9a.png)
 
 2.  Click the [[GET
     /shipping]] path
     on the left navigation menu. 
 
 3.  Click the \`Try it\` link to access the test
-    area.  ![](images/tutorial_html_6326764a039cba2b.png)
+    area.  
+    ![](images/tutorial_html_6326764a039cba2b.png)
 
 4.  Scroll down to the Parameters section, enter any **United State Zip
     Code** (e.g., \`90210\`) and
     click [[Send]] to
-    invoke the API.  ![](images/tutorial_html_74d26a44eab03d67.png)
+    invoke the API.  
+    ![](images/tutorial_html_74d26a44eab03d67.png)
 
 5.  You should see a [[200
     OK ]]and
     a response body as shown
-    below.  ![](images/tutorial_html_f9b90c1492df91e8.png)
+    below.  
+    ![](images/tutorial_html_f9b90c1492df91e8.png)
 
 6.  Go ahead and try out the [[Logistics GET
     /stores]] and

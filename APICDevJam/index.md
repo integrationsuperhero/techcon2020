@@ -27,5 +27,7 @@ API](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab8)
 **APIC Dev Jam Lab Resources**
 
 [inventory.yaml](https://integrationsuperhero.github.io/techcon2020/APICDevJam/resources/inventory.yaml)
+
 [logistics.yaml](https://integrationsuperhero.github.io/techcon2020/APICDevJam/resources/logistics.yaml)
-[calculate.wsdl](https://integrationsuperhero.github.io/techcon2020/APICDevJam/resources/calculate.wsdl)
+
+[calculate.wsdl](https://integrationsuperhero.github.io/techcon2020/APICDevJam/resources/calculate.wsdl)  

@@ -68,7 +68,7 @@ this section, you will create a new OAuth provider API, configure which
 grant type to use, and configure how it will authenticate user
 credentials.
 
- [Configure Authentication URL User Registry]
+ Configure Authentication URL User Registry
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 In order to configure user authentication, you must first define the
@@ -82,23 +82,22 @@ URL.
 2.  Select the [[Authentication URL User
     Registry]] tile.
 
-![](images/tutorial_html_ae58ee320d642047.png)
+    ![](images/tutorial_html_ae58ee320d642047.png)
 
 3.  Specify the only following properties and then
     click [[Save.]]
 
-Title: [[App
-Registry]]
+    Title: [[App Registry]]
 
-URL: <https://thinkibm-services.mybluemix.net/auth>
+    URL: <https://thinkibm-services.mybluemix.net/auth>
 
-Display name:[[ App Registry]]
+    Display name:[[ App Registry]]
 
-Click **Save** to save the resource
+    Click **Save** to save the resource
 
-![](images/tutorial_html_ae75a185a7c7e950.png)
+    ![](images/tutorial_html_ae75a185a7c7e950.png)
 
- [Create OAuth Service]
+ Create OAuth Service
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 1.  In the API Manager from the main menu on the left,
@@ -107,18 +106,18 @@ Click **Save** to save the resource
 2.  In the Resources menu, click  [[OAuth Providers-\> Native OAuth
     Provider]].
 
-![](images/tutorial_html_f1fe85d169c1b8fc.png)
+    ![](images/tutorial_html_f1fe85d169c1b8fc.png)
 
 3.  Specify the following properties and
     click **[Next]** to continue.
 
-Title: [[oauth]]
+    Title: [[oauth]]
 
-Name: [[oauth]]
+    Name: [[oauth]]
 
-Gateway Type: [[DataPower API Gateway]]
+    Gateway Type: [[DataPower API Gateway]]
 
-![](images/tutorial_html_22f9d0d5c30f657d.png)
+    ![](images/tutorial_html_22f9d0d5c30f657d.png)
 
 4.  The next configuration screen will display the default paths to the
     Authorize and Token functions. For Supported grant types,
@@ -128,13 +127,13 @@ Gateway Type: [[DataPower API Gateway]]
     choose [[Confidential]].
     Click [[Next]] continue.
 
-![](images/tutorial_html_2e278c6df90a639f.png)
+    ![](images/tutorial_html_2e278c6df90a639f.png)
 
 5.  One scope is generated for you
-    : [**[sample\_scope\_1]**[.]]
+    : [**[sample_scope_1]**[.]]
 
 6.  Modify the values
-    for **[sample\_scope\_1]**, set the
+    for **[sample_scope_1]**, set the
     following fields:
 
     Name: [[inventory]]
@@ -159,7 +158,7 @@ Gateway Type: [[DataPower API Gateway]]
 
     ![](images/tutorial_html_c24f06de482a8ab5.png)
 
- [Add the OAuth Service to the Sandbox Catalog]
+ Add the OAuth Service to the Sandbox Catalog
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  From the left menu, click [[Home Button
@@ -183,7 +182,7 @@ Gateway Type: [[DataPower API Gateway]]
     click [[Save]].
     Click on the back arrow to go back to Manage.
 
-![](images/tutorial_html_6fa9961893476e8e.png)
+    ![](images/tutorial_html_6fa9961893476e8e.png)
 
  Create a New Version of the Inventory API
 ================================================================================================
@@ -203,7 +202,7 @@ functionality for existing consumers. 
     and select [[Save as a new
     version]].  
 
-![](images/tutorial_html_4f0d083547b597a4.png)
+    ![](images/tutorial_html_4f0d083547b597a4.png)
 
 3.  Enter the new version number
     as [[2.0.0]] and
@@ -240,12 +239,12 @@ your OAuth 2.0 provider.
     -   Leave everything else to the default values and
         click **Save**.  
 
-![](images/tutorial_html_9b9f57dc81561ae7.png)
+        ![](images/tutorial_html_9b9f57dc81561ae7.png)
 
 5.  Navigate to the \`Security\` section and check the \`**oauth-1
     (OAuth)**\` checkbox. Make sure \`inventory\` is also checked.  
 
-![](images/tutorial_html_c8a8e86664fd2a1.png)
+    ![](images/tutorial_html_c8a8e86664fd2a1.png)
 
 6.  Save your changes.
 

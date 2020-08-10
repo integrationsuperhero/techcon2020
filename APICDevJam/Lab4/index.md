@@ -99,34 +99,34 @@ API Connect:
 3.  Click **[New product]** and then
     click [[Next.]]
 
-![](images/tutorial_html_1b6ee2ef86d15297.png)
+    ![](images/tutorial_html_1b6ee2ef86d15297.png)
 
 4.  Title this product [[Think
     Inventory]] and
     click [[Next.]]
 
-![](images/tutorial_html_f9602420f730e70a.png)
+    ![](images/tutorial_html_f9602420f730e70a.png)
 
 5.  Select the [[inventory
     2.0.0 API]],
     then click **[Next]**.
 
-![](images/tutorial_html_a10fb032a1d8a45e.png)
+    ![](images/tutorial_html_a10fb032a1d8a45e.png)
 
 6.  Add the **[Default Plan]** to your
     product and then click **[Next.]**
 
-![](images/tutorial_html_17459876887d995d.png)
+    ![](images/tutorial_html_17459876887d995d.png)
 
 7.  Keep the default settings and
     click **[Next.]**
 
-![](images/tutorial_html_72aa7b3247f45fd9.png)
+    ![](images/tutorial_html_72aa7b3247f45fd9.png)
 
 8.  Your product will be created and associated with the required object
     such as APIs and Plans.
 
-![](images/tutorial_html_8cd7b3b91a70d170.png)
+    ![](images/tutorial_html_8cd7b3b91a70d170.png)
 
 9.  Click **[Edit Product]**. You may want
     to browse across other sections of the \*API Product\* menu such as
@@ -136,14 +136,14 @@ API Connect:
     definition of your API Product. You can check it by clicking on
     the **[Source]** button at the top.
 
-![](images/tutorial_html_df5c1e994aa7e234.png)
+    ![](images/tutorial_html_df5c1e994aa7e234.png)
 
-![](images/tutorial_html_52a598812456db52.png)
+    ![](images/tutorial_html_52a598812456db52.png)
 
  
 
- [Stage the Product to your API Manager environment]
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Stage the Product to your API Manager environment
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Before an API Product can be published, you must first stage that
 Product to a Catalog. When a Product is in the staged state, it is not
@@ -161,19 +161,17 @@ affect changes to the staged version.
 2.  Click the **[⋮]** button next to your
     API Product and **[Stage]** it.
 
-![](images/tutorial_html_3d083025950cefa6.png)
+    ![](images/tutorial_html_3d083025950cefa6.png)
 
 3.  Choose your **[Sandbox]** catalog as a
     target for Staging.
 
-**Note:**
+    **Note:**
 
-IBM API Connect allows you to publish products to specific gateways
-associated with the Catalog.
+    IBM API Connect allows you to publish products to specific gateways
+    associated with the Catalog.
 
-![](images/tutorial_html_d3add46b169ce08a.png)
-
- 
+    ![](images/tutorial_html_d3add46b169ce08a.png)
 
  Supersede the Old Product
 ================================================================================
@@ -184,57 +182,54 @@ in, as well as controls around when you can move an API Product from one
 state to another. In this section, you will explore how to replace a
 running version of an API Product with a new one.
 
-1. Switch to the **[Manage]** tab of the
-interface and click on
-your **[Sandbox]** catalog tile.
+1. Switch to the **[Manage]** tab of the interface and click on
+  your **[Sandbox]** catalog tile.
 
-    ![](images/tutorial_html_dd28754d9b40b41b.gif)
+  ![](images/tutorial_html_dd28754d9b40b41b.gif)
 
 2. The **[Products tab]** will list all of
-the API Products that this Catalog is currently managing.
+  the API Products that this Catalog is currently managing.
 
 3. Make sure your newly created API Product **[Think
-Inventory]** is in
-the **[Staged]** status while the
-old **[Inventory APIs]** product
-is **[Published]** in the Catalog.
+  Inventory]** is in
+  the **[Staged]** status while the
+  old **[Inventory APIs]** product
+  is **[Published]** in the Catalog.
 
-    ![](images/tutorial_html_b69739b268fcf1bf.png)
+  ![](images/tutorial_html_b69739b268fcf1bf.png)
 
 4. Click on the menu options for the **[Inventory
-APIs]** product and select
-the **[Supersede]** option.
+  APIs]** product and select
+  the **[Supersede]** option.
 
-    ![](images/tutorial_html_779570cda3681c33.png)
+  ![](images/tutorial_html_779570cda3681c33.png)
 
 5. Select the **[Think
-Inventory]** product, as this is the one
-which will supersede Inventory APIs .
+  Inventory]** product, as this is the one
+  which will supersede Inventory APIs .
 
-    
-
-![](images/tutorial_html_4be14720ca4455b0.png)
+  ![](images/tutorial_html_4be14720ca4455b0.png)
 
 6. Click **[Next]** in the bottom.
 
 7. In order to maintain our consumers' entitlements, we need to migrate
-their plan subscriptions.
+  their plan subscriptions.
 
-    Both of our Products have plans called**[ Default
-Plan.]** You will now choose to move
-subscribers from the Inventory Product's default plan to the Think
-Inventory Product's default plan.
+  Both of our Products have plans called**[ Default
+  Plan.]** You will now choose to move
+  subscribers from the Inventory Product's default plan to the Think
+  Inventory Product's default plan.
 
-    In the drop-down menu, select Default Plan and then
-click [[Supersede]].
+  In the drop-down menu, select Default Plan and then
+  click [[Supersede]].
 
    ![](images/tutorial_html_6303625db3f1ae01.png)
 
 8. API Connect will take care of deprecating the old product and
-publishing the new one. As a result, the new **Think Inventory** product
-will be published, while the old one will be automatically deprecated.
+  publishing the new one. As a result, the new **Think Inventory** product
+  will be published, while the old one will be automatically deprecated.
 
-    ![](images/tutorial_html_d7847d64c8d3c2d5.png)
+   ![](images/tutorial_html_d7847d64c8d3c2d5.png)
 
  Test the OAuth Configuration
 ===================================================================================
@@ -260,7 +255,7 @@ OAuth is working properly.
     you're already entitled to the API's contained in the new Product's
     Default Plan - including the O-Auth API.
 
-![](images/tutorial_html_b752e8ed59be706d.png)
+    ![](images/tutorial_html_b752e8ed59be706d.png)
 
 5.  Select Subscribe Default Plan and then select IBM Consumer App to
     subscribe the app.
@@ -273,7 +268,7 @@ OAuth is working properly.
     the top. Notice that we now have an additional OAuth security
     requirement defined.    
 
-![](images/tutorial_html_641396f6f65e50e1.png)
+    ![](images/tutorial_html_641396f6f65e50e1.png)
 
 8.  Scroll down to browse the invocation form.
 
@@ -300,13 +295,13 @@ OAuth is working properly.
     -   The OAuth API which you built in lab 3 will intercept the
         request, validate the credentials, and generate a token.  
 
-![](images/tutorial_html_deb6f414f76d453e.png)
+    ![](images/tutorial_html_deb6f414f76d453e.png)
 
 13. Click the **[Send]** button to invoke
     the API. The request will include the OAuth bearer token in
     the **[Authorization]** header.
 
-![](images/tutorial_html_40c0aad7db0f83e7.png)
+    ![](images/tutorial_html_40c0aad7db0f83e7.png)
 
 14. To prove that the token is being validated, you can either remove or
     modify the contents of the **[Access

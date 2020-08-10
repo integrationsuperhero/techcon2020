@@ -18,7 +18,7 @@ In this tutorial, you will explore the following key capabilities:
 -   Publish an API for developers.
 
  APIC Dev Jam Series
-=================================================================================================================================================================================================================
+====================================================================================================================================================================
 
 The APIC Dev Jam Series is a hands-on workshop with lab exercises that
 walk you through designing, publishing, and securing APIs. This workshop
@@ -71,61 +71,63 @@ for Inventory. Then, we will import it to the online workspace.
     Advanced, and then Accept the to continue. Log in with the username
     ad credentials supplied.
 
-![](images/tutorial_html_c7010880ec6f2b94.png)
+    ![](images/tutorial_html_c7010880ec6f2b94.png)
 
-![](images/tutorial_html_228c6cdfd6f4d489.png)
+    ![](images/tutorial_html_228c6cdfd6f4d489.png)
 
-When you login for the first time you will see What's new in API Connect
-10. Click **Done** after reviewing.
+    When you login for the first time you will see What's new in API Connect
+    10. Click **Done** after reviewing.
 
-![](images/tutorial_html_db2469619b74ee90.png)
+    ![](images/tutorial_html_db2469619b74ee90.png)
 
 2.  Click on the [[Develop APIs and
     Products]] tile
     to enter the online development workspace.
 
-![](images/tutorial_html_61b4022571d0a4a3.png)  
+    ![](images/tutorial_html_61b4022571d0a4a3.png)  
 
 3.  Now you are in the home screen of the online developer tool. From
     here, you can begin to create APIs and Products.
 
-![](images/tutorial_html_333c6b76e2638b45.png)  
+    ![](images/tutorial_html_333c6b76e2638b45.png)  
 
 4.  Click [[ADD-\>API.]]
 
-![](images/tutorial_html_993047b3f798317c.png)  
+    ![](images/tutorial_html_993047b3f798317c.png)  
 
-5.  On the next screen, select [[Existing
-    OpenAPI]] under
+5.  On the next screen, select [[Existing OpenAPI]] under
     Import**,** as in the image below. Then
     click **[Next.]**
 
-![](images/tutorial_html_b219e12b9ba30a1c.png)  
+    ![](images/tutorial_html_b219e12b9ba30a1c.png)  
 
-6.  Now download the[[
-    Inventory.yaml]] 
+6.  Now download the[[Inventory.yaml]] 
     file the dte-labs git repository using the following command.
 
-curl -OL
-https://raw.githubusercontent.com/ibm-cloudintegration/dte-labs/master/APICv10/inventory.yaml
+    ```
+    curl -OL https://raw.githubusercontent.com/ibm-cloudintegration/dte-labs/master/APICv10/inventory.yaml
 
-Choose the downloaded
-[[Inventory.yaml]] OpenAPI
-definition and Click **[Next.]**
+    ```
 
-![](images/tutorial_html_64514a49c35e90d4.png)  
+    You can also down the file using this link : [inventory.yaml](https://integrationsuperhero.github.io/techcon2020/APICDevJam/resources/inventory.yaml)
+
+    Choose the downloaded
+    [[Inventory.yaml]] OpenAPI
+    definition and Click **[Next.]**
+
+    ![](images/tutorial_html_64514a49c35e90d4.png)  
 
 7.  **[Do not ]**select **[Activate
     API]**.
     Click [[Next]].
 
-![](images/tutorial_html_3e51d8ec0929f2b5.png)  
+    ![](images/tutorial_html_3e51d8ec0929f2b5.png)  
 
 8.  The API should be imported successfully as shown in the image below.
     Click [[Edit
     API]].
 
-![](images/tutorial_html_83ece115b799d430.png)
+    ![](images/tutorial_html_83ece115b799d430.png)
 
  Configure API
 ===================================================================
@@ -138,7 +140,7 @@ actually running. API Connect supports pointing to multiple backend
 endpoints to match your multiple build stage environments. Finally, we
 will configure the proxy call to invoke the endpoint.
 
- [Configure API Key security]
+ Configure API Key security
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Click [[Security
@@ -166,7 +168,7 @@ will configure the proxy call to invoke the endpoint.
     Name]] type [[X-IBM-Client-Id]].
     Your screen should look like the image below. 
 
-![](images/tutorial_html_9acabae1c0f045ea.png)
+    ![](images/tutorial_html_9acabae1c0f045ea.png)
 
 6.  Click
     the [[Save]] button
@@ -186,7 +188,7 @@ will configure the proxy call to invoke the endpoint.
     Name]] type [[X-IBM-Client-Secret]].
     Your screen should look like the image below. 
 
-![](images/tutorial_html_c8364653a0d1e2f5.png)
+    ![](images/tutorial_html_c8364653a0d1e2f5.png)
 
 10. Click
     the [[Save]] button
@@ -202,14 +204,14 @@ will configure the proxy call to invoke the endpoint.
     client-id. Select both as shown in the image below. Then
     click [[Save]]. 
 
-![](images/tutorial_html_41e66c41b43e89ac.png)
+    ![](images/tutorial_html_41e66c41b43e89ac.png)
 
 13. Add security and enable secret and client-id. Click **Save** to save
     the changes.
 
-![](images/tutorial_html_5bd00a842ec2bfff.png)
+    ![](images/tutorial_html_5bd00a842ec2bfff.png)
 
- [Define Target-URL for Sandbox environment]
+ Define Target-URL for Sandbox environment
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Click
@@ -234,7 +236,7 @@ will configure the proxy call to invoke the endpoint.
 6.  Click **[Save]** to complete the
     configuration.
 
- [Configure Proxy Call in Designer]
+ Configure Proxy Call in Designer
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  On the top Navigation,
@@ -262,14 +264,14 @@ after creation in the Assemble view!
     the **[play]** **[icon]** as
     indicated in the image below. 
 
-![](images/tutorial_html_70e7e587c6be69d7.png)
+    ![](images/tutorial_html_70e7e587c6be69d7.png)
 
 2.  Toggle
     [[Offline]]
     to activate API. to publish the API itself to the gateway for
     testing.  
 
-![](images/tutorial_html_227e8350d01d16f9.png)
+    ![](images/tutorial_html_227e8350d01d16f9.png)
 
 3.  After the API is published, additional tabs appear your screen
     should look like the image below.
@@ -277,27 +279,27 @@ after creation in the Assemble view!
 
 4.  Choose **[Test]** tab and append **[/Items]** to the URL as shown below.
 
-![](images/tutorial_html_5e2c8cff09f77c58.png)
+    ![](images/tutorial_html_5e2c8cff09f77c58.png)
 
 5.  Your client Id  and client secret for the sandbox-test-app is
     prefilled.
 
 6.  Scroll all the way to the bottom of the test view.
 
-![](images/tutorial_html_6400dc1e94d34fd8.png)
+    ![](images/tutorial_html_6400dc1e94d34fd8.png)
 
-7.  Click [[Invoke]].
+7.  Click [[Send]].
 
 8.  If this is the first test of the API, you will see a certificate
     exception. Simply click on the URL and choose the option to proceed.
 
 9.  Go back to the test view and
-    click [[Invoke]] again.
+    click [[Send]] again.
 
 10. Now you will see a Response section with Status code 200 OK and the
     Body displaying all the inventory items.
 
-![](images/tutorial_html_d063fb9dba035b70.png)
+    ![](images/tutorial_html_d063fb9dba035b70.png)
 
  Publish API
 =================================================================
@@ -308,14 +310,14 @@ the sandbox catalog. A product dictates rate limits and API throttling.
 When the product is published, the Invoke policy defined in the previous
 lab is written to the gateway. 
 
- [Create Inventory Product and Add API]
+ Create Inventory Product and Add API
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  From the vertical navigation menu on the left,
     click **[Develop]** to return to the
     Develop home screen.
 
-![](images/tutorial_html_fa935b3ea4222145.png)
+    ![](images/tutorial_html_fa935b3ea4222145.png)
 
 2.  Click **[Add]** and
     select [Product]**.**
@@ -331,24 +333,24 @@ lab is written to the gateway. 
     shown in the image below. Then
     click **[Next]**.  
 
-![](images/tutorial_html_536925e23d552bb5.png)
+    ![](images/tutorial_html_536925e23d552bb5.png)
 
 6.  Keep the **[Default Plan]** as is.
     Click **[Next]**.  
 
-![](images/tutorial_html_333097bd27fa8fa7.png)
+    ![](images/tutorial_html_333097bd27fa8fa7.png)
 
 7.  Under **[Publish]**, enable **[Publish
     Product]** as shown in the image below.
     Then
     click [**[Next]**[.  ]]
 
-![](images/tutorial_html_850499fce1003aa7.png)
+    ![](images/tutorial_html_850499fce1003aa7.png)
 
 8.  The Product is now published successfully with the API base URL
     listed and available for developers from the developer portal. Go
     to [APIC (v10) Dev Jam - Lab 2 - The Developer Portal
-    Experience](https://ibm.com/cloud/garage/dte/tutorial/apic-dev-jam-lab-2-developer-portal-experience) to
+    Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab2) to
     see how to access this API as a developer.
 
  Summary
