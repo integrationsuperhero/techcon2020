@@ -1,2 +1,4 @@
 theme: jekyll-theme-cayman
-title: IBM TechCon 2020 Labs
+title: IBM TechCon 2020 Labs - ibm.biz/TechConLabs
+github:
+  is_project_page: false
