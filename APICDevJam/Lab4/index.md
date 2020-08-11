@@ -300,11 +300,11 @@ OAuth is working properly.
 
     ![](images/tutorial_html_40c0aad7db0f83e7.png)
 
-14. To prove that the token is being validated, you can either remove or
+<!--14. To prove that the token is being validated, you can either remove or
     modify the contents of the **[Access
     Token]** field. Then click
     the **[Send]** button again and see
-    the **401 Unauthorized **error response.
+    the **401 Unauthorized **error response.-->
 
  Summary
 ==============================================================
