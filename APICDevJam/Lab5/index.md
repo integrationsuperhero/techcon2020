@@ -246,9 +246,9 @@ API definition.
 
     ![](images/tutorial_html_ebb6419fc4fb979a.png)
 
-3.  Click **[Browse]** to
+3.  Download the [calculate.wsdl](https://integrationsuperhero.github.io/techcon2020/APICDevJam/resources/calculate.wsdl) and then Click **[Browse]** to
     select [[calculate.wsdl]] located
-    in /home/sysadmin/.
+    in where you downloaded it on your machine.
 
     ![](images/tutorial_html_e10ec45733dfce99.png)
 
