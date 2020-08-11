@@ -141,7 +141,7 @@ for the financing API.
 
     The page will look like this:
 
-    ![](images/tutorial_html_c600b4bb8ec6adee.png)
+   ![](images/tutorial_html_c600b4bb8ec6adee.png)
 
     The property will be utilized in the Path you create next.
     Click **[Save]** to go back to the main API
@@ -343,7 +343,7 @@ API definition.
     element. A line will be drawn between the two, indicating a mapping from
     the source to the target.
 
-    ![](/techcon2020/APICDevJam/Lab5/images/tutorial_html_e18d417ab873efe0.png)
+![](images/tutorial_html_e18d417ab873efe0.png)
     
 14. Click [[\`X\`]] in
     the map editor to return to the policy pipeline.
