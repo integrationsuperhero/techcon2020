@@ -1,0 +1,27 @@
+apiVersion: app.ibm.com/v1alpha1
+kind: Subscription
+metadata:
+  name: lab0-modresort101-modresortapp
+  namespace: lab0-modresort-project
+  labels:
+    app: lab0-modresortapp
+    release: lab0-modresort101
+spec:
+  channel: lab0-modresort-entitlement/lab0-modresort-devchan
+  name: ""
+  packageFilter:
+    version: ">=1.x"
+    labelSelector:
+      matchLabels:
+        package: lab0-modresort
+        component: main
+  placement:
+    placementRef:
+      name: lab0-modresortapp101-modresortapp
+      kind: PlacementRule
+      group: app.ibm.com
+  overrides:
+  - clusterName: "/"
+    clusterOverrides:
+    - path: "metadata.namespace"
+      value: default

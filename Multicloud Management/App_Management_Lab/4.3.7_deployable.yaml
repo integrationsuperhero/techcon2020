@@ -1,34 +1,34 @@
 apiVersion: app.ibm.com/v1alpha1
 kind: Deployable
 metadata:
-  name: devchan-modresortchan-deployment
-  namespace: modresort-entitlement
+  name: lab0-devchan-modresortchan-deployment
+  namespace: lab0-modresort-entitlement
   annotations:
     app.ibm.com/is-local-deployable: "false"
   labels:
-    app: modresortchan
+    app: lab0-modresortchan
     component: main
-    package: modresort
+    package: lab0-modresort
 spec:
   template:
     kind: Deployment
     apiVersion: apps/v1
     metadata:
-      name: devchan-modresortchan-deployment
+      name: lab0-devchan-modresortchan-deployment
       labels:
-        app: modresortchan
+        app: lab0-modresortchan
     spec:
       selector:
         matchLabels:
-          app: modresortchan
-        release: modresort-devchan
-        tier: frontend
+          app: lab0-modresortchan
+          release: lab0-modresort-devchan
+          tier: frontend
       replicas: 1
       template:
         metadata:
           labels:
-            app: modresortchan
-            release: modresort-devchan
+            app: lab0-modresortchan
+            release: lab0-modresort-devchan
             tier: frontend
         spec:
           containers:
@@ -38,69 +38,39 @@ spec:
               ports:
                 - containerPort: 9080
               env:
-                - name: GET_HOSTS_FROM
-                  value: dns
-                - name: WLP_LOGGING_CONSOLE_FORMAT
-                  value: json
-                - name: WLP_LOGGING_CONSOLE_LOGLEVEL
-                  value: info
-                - name: WLP_LOGGING_CONSOLE_SOURCE
-                  value: message,trace,accessLog,ffdc
+              - name: GET_HOSTS_FROM
+                value: dns
+              - name: WLP_LOGGING_CONSOLE_FORMAT
+                value: json
+              - name: WLP_LOGGING_CONSOLE_LOGLEVEL
+                value: info
+              - name: WLP_LOGGING_CONSOLE_SOURCE
+                value: message,trace,accessLog,ffdc
 ---
 apiVersion: app.ibm.com/v1alpha1
 kind: Deployable
 metadata:
-  name: devchan-modresortchan-service
-  namespace: modresort-entitlement
+  name: lab0-devchan-modresortchan-service
+  namespace: lab0-modresort-entitlement
   annotations:
     app.ibm.com/is-local-deployable: "false"
   labels:
-    app: modresortchan
+    app: lab0-modresortchan
     component: main
-    package: modresort
+    package: lab0-modresort
 spec:
   template:
-  kind: Service
-  apiVersion: v1
-  metadata:
-    name: devchan-modresortchan-service
-    labels:
-      app: modresortchan
-  spec:
-    type: NodePort
-    ports:
-      - port: 9080
-    selector:
-      app: modresortchan
-      release: modresort-devchan
-      tier: frontend
----
-apiVersion: app.ibm.com/v1alpha1
-kind: Deployable
-metadata:
-  name: devchan-modresortchan-route
-  namespace: modresort-entitlement
-  annotations:
-    app.ibm.com/is-local-deployable: "false"
-  labels:
-    app: modresortchan
-    component: main
-    package: modresort
-spec:
-  template:
-    apiVersion: route.openshift.io/v1
-    kind: Route
+    kind: Service
+    apiVersion: v1
     metadata:
+      name: lab0-devchan-modresortchan-service
       labels:
-        app: devchan-modresortchan-route
-    name: modresorts
-  spec:
-    host: modresorts-default.10.0.10.2.nip.io
-    port:
-      targetPort: 9080
-    subdomain: ""
-    to:
-      kind: Service
-      name: devchan-modresortchan-service
-      weight: 100
-    wildcardPolicy: None
+        app: lab0-modresortchan
+    spec:
+      type: NodePort
+      ports:
+        - port: 9080
+      selector:
+        app: lab0-modresortchan
+        release: lab0-modresort-devchan
+        tier: frontend
