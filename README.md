@@ -9,7 +9,7 @@ Links for August 11th:
  	
 * [API](https://ibm.webex.com/ibm/k2/j.php?MTID=t2092d2ddb3908271888533fda0f86c66)	
 * [Application Integration, Blockchain, Messaging & Events](https://ibm.webex.com/ibm/k2/j.php?MTID=t6e4a0bc70f8d4fea0bac64764f150ffa)
-* [Application Modernization](https://ibm.webex.com/ibm/k2/j.php?MTID=t463db8e49064ca86c9ce482096da4195)	
+* [Application Platform](https://ibm.webex.com/ibm/k2/j.php?MTID=t463db8e49064ca86c9ce482096da4195)	
 * [Management (Multicloud Management and Edge)](https://ibm.webex.com/ibm/k2/j.php?MTID=t684c9d7f74f41ee8b0f574dcdbcdf99b)
 
 All passwords are the same: TechCon2020
