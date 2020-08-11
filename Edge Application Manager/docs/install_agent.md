@@ -66,8 +66,8 @@ A lot of messages will go by.  If they end with the following you can continue o
 
 <table align="center">
 <tr>
-  <td align="left" width="9999"><a href="README.md">Previous: Home</a> </td>
-  <td align="right" width="9999"><a href="build_publish_service.md">Next: Build, Publish Service </a> </td>
+  <td align="left" width="9999"><a href="start">Previous: Home</a> </td>
+  <td align="right" width="9999"><a href="build_publish_service">Next: Build, Publish Service </a> </td>
 </tr>
 </table>
 

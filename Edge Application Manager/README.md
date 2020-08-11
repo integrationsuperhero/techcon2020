@@ -27,6 +27,6 @@ Please make sure to check out the concepts, demos, product tours and other tutor
 <table align="center">
 <tr>
   <td align="left" width="9999"><a></a></td>
-  <td align="right" width="9999"><a href="docs/README.md">Start IEAM Model Management System Lab</a> </td>
+  <td align="right" width="9999"><a href="docs">Start IEAM Model Management System Lab</a> </td>
 </tr>
 </table>

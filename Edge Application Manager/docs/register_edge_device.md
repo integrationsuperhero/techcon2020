@@ -115,7 +115,7 @@ These properties will be used by the IEAM Hub to see if there are any matches wi
 
 <table align="center">
 <tr>
-  <td align="left" width="9999"><a href="publish_deployment_policy.md">Previous: Publish Deployment Policy</a> </td>
-  <td align="right" width="9999"><a href="README.md">Back to beginning</a> </td>
+  <td align="left" width="9999"><a href="publish_deployment_policy">Previous: Publish Deployment Policy</a> </td>
+  <td align="right" width="9999"><a href="start">Back to beginning</a> </td>
 </tr>
 </table>
