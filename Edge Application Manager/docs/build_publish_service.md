@@ -110,7 +110,7 @@ hzn exchange service list
 
 <table align="center">
 <tr>
-  <td align="left" width="9999"><a href="install_agent.md">Previous: Install Agent</a> </td>
-  <td align="right" width="9999"><a href="publish_deployment_policy.md">Next: Publish Deployment Policy </a> </td>
+  <td align="left" width="9999"><a href="install_agent">Previous: Install Agent</a> </td>
+  <td align="right" width="9999"><a href="publish_deployment_policy">Next: Publish Deployment Policy </a> </td>
 </tr>
 </table>

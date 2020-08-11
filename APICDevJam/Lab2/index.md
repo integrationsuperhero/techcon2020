@@ -26,8 +26,6 @@ to create a successful API strategy. There are 8 labs and each is 30
 minutes long. Make sure you choose enough time in your reservation to
 get through all the labs! 
 
- 
-
 [NOTE: ]**[This demo environment contains a
 full API Connect installation in Cloud Pak for Integration. The login
 information to the APIC cluster will be sent in a separate email when
@@ -65,8 +63,6 @@ Prerequisites: Labs 1
  Generate the developer portal
 ====================================================================================
 
- 
-
 A developer portal for the sandbox catalog was already configured in
 this environment. A consumer account "ibmuser" was also created to use
 the Developer Portal server. In this section, login to Developer Portal
@@ -80,20 +76,20 @@ using the credentials provided in email.
     and feel to their organizational specifications. The default
     Developer Portal looks like below:
 
-![](images/tutorial_html_df45d2edf6f25ba8.png)
+    ![](images/tutorial_html_df45d2edf6f25ba8.png)
 
 2.  Some products are visible to all users without an account depending
     on the Product visibility setting. Additional options are available
     when you login to the Portal Server.
 
-Click **Sign in** to login to the portal
+    Click **Sign in** to login to the portal
 
-![](images/tutorial_html_279e27e5ac9b71cb.png)
+    ![](images/tutorial_html_279e27e5ac9b71cb.png)
 
 3.  Login to portal user using the username and password supplied in the
     email.
 
-![](images/tutorial_html_d0807a5f400162a.png)
+    ![](images/tutorial_html_d0807a5f400162a.png)
 
 4.  After successful login, you will see a Get Started page. Proceed to
     create a new Test application.
@@ -115,15 +111,15 @@ subscribing it to an API Product.
     App]] in
     the *Create a new App* tile.
 
-![](images/tutorial_html_114ebdd6ef4988c.png)
+    ![](images/tutorial_html_114ebdd6ef4988c.png)
 
 2.  Give your application the title **[IBM
-    Consumer ]**and then
+    Consumer ]** and then
     click [[Submit]].
 
-![](images/tutorial_html_c4d9babec32568f9.png)
+    ![](images/tutorial_html_c4d9babec32568f9.png)
 
- [Save the Consumer Application Credentials]
+ Save the Consumer Application Credentials
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 When your consumer application is registered in the IBM API Connect
@@ -138,12 +134,12 @@ to validate your subscription entitlements.
     can always come back to view the Key. However, if you lose the
     Secret, you will need to generate a new one in the app settings.
 
-![](images/tutorial_html_aba0b5683b88b7d6.png)
+    ![](images/tutorial_html_aba0b5683b88b7d6.png)
 
 2.  Now you\'ve entered the App Dashboard. Here you\'re able to see the
     analytics of your APIs.
 
- [Subscribe to the API Product]
+ Subscribe to the API Product
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 At this point, your registered consumer application has no entitlements.
@@ -156,17 +152,17 @@ Product and Plan.
 2.  Click the [[inventory auto product
     1.0.0]] product.
 
-![](images/tutorial_html_38168de09ddc40f.png)
+    ![](images/tutorial_html_38168de09ddc40f.png)
 
-1.  Click the [[Subscribe]] button
+3.  Click the [[Subscribe]] button
     for the default plan that is listed.
 
-2.  Follow the steps to **Select your application**, **Confirm
+4.  Follow the steps to **Select your application**, **Confirm
     Subscription**, and **View Summary**. Then click **Done**.
 
-![](images/tutorial_html_cfeb4fb8846dee41.png)
+    ![](images/tutorial_html_cfeb4fb8846dee41.png)
 
-![](images/tutorial_html_95cbfb50e3695ef5.png)
+    ![](images/tutorial_html_95cbfb50e3695ef5.png)
 
  Test the API
 ===================================================================
@@ -177,7 +173,7 @@ per-API.
 
 1.  Open the **inventory 1.0.0** API to browse the API definition.
 
-![](images/tutorial_html_9830850c1b13f9c1.png)
+    ![](images/tutorial_html_9830850c1b13f9c1.png)
 
 2.  Click the [[GET
     /Items]] operation
@@ -189,7 +185,7 @@ per-API.
 4.  Click the [[Try
     it]] tab.
 
-![](images/tutorial_html_a16511906f41b73.png)
+    ![](images/tutorial_html_a16511906f41b73.png)
 
 5.  If you only have one application registered, it will be
     automatically selected in the **[Client
@@ -200,7 +196,7 @@ per-API.
 6.  Paste your **[Client Secret]** into the
     provided field.
 
-7.  Click the [[Send]] button
+7.  Click the [[**Send**]] button
     to invoke the API.
 
 8.  Scroll down to see the call results.

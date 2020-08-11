@@ -50,7 +50,7 @@ hzn exchange business listpolicy $HOSTNAME.ieam-mms-lab.bp
 
 <table align="center">
 <tr>
-  <td align="left" width="9999"><a href="build_publish_service.md">Previous: Build, Publish Service</a> </td>
-  <td align="right" width="9999"><a href="register_edge_device.md">Next: Register Edge Device </a> </td>
+  <td align="left" width="9999"><a href="build_publish_service">Previous: Build, Publish Service</a> </td>
+  <td align="right" width="9999"><a href="register_edge_device">Next: Register Edge Device </a> </td>
 </tr>
 </table>
