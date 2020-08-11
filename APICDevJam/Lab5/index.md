@@ -531,7 +531,7 @@ consolidated message for our consumers.
     -   [[Title:
         invoke_xyz]]
 
-    -   [[URL: $(shipping_svc_url)?company=xyz&from_zip=90210&to_zip={zip}]]
+    -   [[URL: $(shipping_svc_url)?company=xyz&from_zip=90210&to_zip=\{zip\}]]
 
     -   [[Stop on error: unchecked]]
 
