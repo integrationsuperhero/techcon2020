@@ -2,7 +2,7 @@
 
 In this section we will register the agent device back with the IEAM Hub.  We will include a updated set of properties such that the service we created will be deployed to the device as a result of the deployment policy we created.  We will verify the agreement was constructed and accepted, and that the service is running as a local docker container on the edge device.  Finally we will test out the deployed service by invoking its web page.
 
-The `horizon/node+properties.json` contains the properties and constraints that will be associated with this edge device node.  The value for `%HOSTNAME%` will have been substituted with your actual edge device hostname when you processed all the envionment variables earlier.  
+The `horizon/node_properties.json` contains the properties and constraints that will be associated with this edge device node.  The value for `%HOSTNAME%` will have been substituted with your actual edge device hostname when you processed all the envionment variables earlier.  
 
 
 ```
@@ -48,7 +48,7 @@ These properties will be used by the IEAM Hub to see if there are any matches wi
    ```
    You should see a container running.  This is your service that you built and published earlier.  Take note of the container ID.  We will verify that this is the same container running, after we have updated its model.
 
-5. Test the service/application with a web browser.  Use the IEAM Host URL (the same base URL as the IEAM console URL), with the `http` protocol, and a port number that starts with `40` and ends with the two digits of your edge device name.  For example if your edge device is `dev29` then the port number will be `4029`.  A typical service URL will be `http:/green.coc-ibm.com:4029`.  The application should look like the following.  
+5. Test the service/application with a web browser.  Use the IEAM Host URL (the same base URL as the IEAM console URL), with the `http` protocol, and a port number that starts with `40` and ends with the two digits of your edge device name.  For example if your edge device is `dev29` then the port number will be `4029`.  A typical service URL will be `http://green.coc-ibm.com:4029`.  The application should look like the following.  
 ![Initial App Screen](images/tfapp.png)
 
 6. Press the Process Image 1 button to have the app load an image (dog and cow) into the web page, then use the TensorFlow model to process it and discover any recognizable objects.  For the first image, the results are not that good.  
@@ -82,7 +82,7 @@ These properties will be used by the IEAM Hub to see if there are any matches wi
    }
    ```  
 
-7. List all the MMS objects on the IEAM Hub.  You should see a number of objects, possible with prefixes of other device names.  Verify that there are no objects with out device name as a prefix.
+7. List all the MMS objects on the IEAM Hub. Verify that there are no objects with your device name as a prefix. You may see a number of objects, possibly with prefixes of other device names.  
    ```
    hzn mms object list
 
@@ -116,6 +116,6 @@ These properties will be used by the IEAM Hub to see if there are any matches wi
 <table align="center">
 <tr>
   <td align="left" width="9999"><a href="publish_deployment_policy">Previous: Publish Deployment Policy</a> </td>
-  <td align="right" width="9999"><a href="start">Back to beginning</a> </td>
+  <td align="right" width="9999"><a href="README">Back to beginning</a> </td>
 </tr>
 </table>

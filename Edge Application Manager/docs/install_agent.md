@@ -5,7 +5,7 @@ we were given.  We then obtain an API key which identifies your account on the I
 update the `HZN_EXCHANGE_USER_AUTH` environment varaible with your personalized key, and use 
 it to install the agent program on the edge device.
 
-1. In a terminal window (i.e. putty) shell into the edge device.  
+1. Use the link provided to you for the web based shell into your edge device, or if you prefer to use your own terminal window (i.e. putty) shell into the edge device with the domain and port number of your edge device.  
    ```
    ssh <edge userid>@<edge hostname> -p <edge port>
 
@@ -13,7 +13,7 @@ it to install the agent program on the edge device.
 
 2. The IEAM comand line interfaces (`cloudctl` and `hzn`) have already been installed on the edge device.  Use the IEAM client and log into the IEAM Hub.   
    ```
-   cloudctl login -a <IEAM Hub URL> -u <IEAM userid> -p <IEAM password> -n default
+   cloudctl login -a <IBM Common Services API URL> -u <IEAM userid> -p <IEAM password> -n default
 
    ```
 
@@ -40,7 +40,7 @@ it to install the agent program on the edge device.
 
    ```
 
-6. On the line that begins with `HZN_EXCHANGE_USER_AUTH=iamapikey:` change the value of the API key after it to yours.  Save the file.  
+6. On the line that begins with `HZN_EXCHANGE_USER_AUTH=iamapikey:` replace `<your api key here>` with the value of your API key obtained in step 4.  Save the file (in nano Ctrl-O <enter>) then exit the editor (Ctrl-X). 
 
 7. Reset the environment variables.   
 

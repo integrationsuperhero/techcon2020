@@ -22,14 +22,14 @@ Have on hand the following information:
 
 - **Edge device hostname and ssh port** 
 - **Edge device userid/password**
-- **IBM Edge Application Manager( IEAM ) URL**
-- **IEAM console userid/password**
-- **IEAM host url**
+- **IBM Common Services API URL (used with cli cloudctl)**
+- **IBM Edge Application Manager(IEAM) console userid/password**
+- **IEAM console url**
 - **Your Docker Hub ID (you can <a href="https://hub.docker.com/signup" target="_blank">create a temporary one</a> if you like)**
 
 <table align="center">
 <tr>
-  <td align="right" width="9999"><a href="install_agent">Install Agent</a></td>
+  <td align="right" width="9999"><a href="install_agent.md">Install Agent</a></td>
 </tr>
 </table>
 
