@@ -5,12 +5,12 @@ Proctored labs will be available August 11-13 from 11 AM EST to 4 PM EST. Labs w
 
 Please join the virtual lab room associated track that the lab is in. All passwords are the same: TechCon2020. Once in the room please ask one of the lab hosts for an access to an environment to work on the labs. We do request that you stay connected to our virtual room during the course of working on the lab so we can provide assistance. Please let a proctor know when you have completed your lab so we can free up the environment for other customers.
 
-When logging in please use your work email and provide at least first name and last initial. Links for August 12th:
+When logging in please use your work email and provide at least first name and last initial. Links for August 13th:
   
-* [API](https://ibm.webex.com/ibm/k2/j.php?MTID=t7652bcdd6f99cc0acd33e5033cbed7af)	
-* [Application Integration, Blockchain, Messaging & Events](https://ibm.webex.com/ibm/k2/j.php?MTID=t2c6019c44481aea890fecb6187d7d7f6)
-* [Application Platform](https://ibm.webex.com/ibm/k2/j.php?MTID=tf3ba447e98fd76c73aa0e7df6b012974)	
-* [Management (Multicloud Management and Edge)](https://ibm.webex.com/ibm/k2/j.php?MTID=t85462185968415094b303a7ff96d5b50)
+* [API](https://ibm.webex.com/ibm/k2/e.php?MTID=tf26db5029cd7f06e56539533ae8485ea)	
+* [Application Integration, Blockchain, Messaging & Events](https://ibm.webex.com/ibm/k2/e.php?MTID=te6aa87ff4e3e0eefbee757b276f2b5ee)
+* [Application Platform](https://ibm.webex.com/ibm/k2/e.php?MTID=t9b9eb167b31c4728867798097d38cbea)	
+* [Management (Multicloud Management and Edge)](https://ibm.webex.com/ibm/k2/e.php?MTID=t56b9d04e8cb0ab2e61ddaa4dff93ecf5)
 
 All passwords are the same: TechCon2020
 
